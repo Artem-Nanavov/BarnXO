@@ -1,0 +1,21 @@
+@import 'styles/mixins.scss';
+
+.wrap {
+  width: 100vw;
+}
+
+.header {
+  width: 100%;
+  height: 48px;
+  background-color: #262623;
+  @include display(flex);
+  @include justify-content(center);
+  @include align-items(center);
+
+  &__content {
+    max-width: 1600px;
+    @include display(flex);
+    @include justify-content(space-between);
+    @include align-items(center);
+  }
+}
