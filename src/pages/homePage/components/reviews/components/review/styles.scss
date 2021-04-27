@@ -1,0 +1,67 @@
+@import 'resources/styles/mixins.scss';
+
+.review {
+	padding: 25px;
+	padding-top: 30px;
+	border: 1px solid #EBEBEB;
+	box-sizing: border-box;
+
+	&__header {
+		width: 100%;
+		@include display(flex);
+		@include align-items(center);
+	}
+
+	&__info {
+		width: 100%;
+		margin-left: 20px;
+
+		& > p {
+			font-family: Noto Sans;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 24px;
+			color: #262623;
+		}
+	}
+
+	&__description {
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 30px;
+		color: rgba(38, 38, 35, 0.65);
+	}
+
+	&__postedOn {
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 30px;
+		color: rgba(102, 102, 102, 0.6);
+	}
+
+	&__rating {
+		@include display(flex);
+		@include align-items(center);
+		@include justify-content(space-between);
+
+		& > div {
+			@include display(grid);
+			@include grid-template-columns(1fr 1fr 1fr 1fr 1fr);
+			@include grid-column-gap(2.75px)
+		}
+
+		& > p {
+			font-family: Noto Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 24px;
+			color: #666666;
+		}
+	}
+}

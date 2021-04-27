@@ -1,0 +1,30 @@
+@import 'resources/styles/mixins.scss';
+
+.example {
+	@include position(relative);
+	width: 513px;
+	height: 395px;
+	cursor: pointer;
+
+	&__goTo {
+		left: 0;
+		bottom: 0;
+		@include position(absolute);
+		width: 100%;
+		height: 86px;
+		@include display(flex);
+		@include align-items(center);
+		@include justify-content(space-between);
+		padding: 0 27px;
+		background: rgba(0, 0, 0, 0.6);
+	}
+
+	&__title {
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 26px;
+		color: #FFFFFF;
+	}
+}

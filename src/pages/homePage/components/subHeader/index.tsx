@@ -1,0 +1,57 @@
+import React from 'react';
+import Rectangle131 from 'resources/images/Rectangle131.png';
+import Rectangle130 from 'resources/images/Rectangle130.png';
+import Rectangle132 from 'resources/images/Rectangle132.png';
+import styles from './styles.scss';
+
+const SubHeader = () => (
+	<div className={styles.subHeader}>
+		<div className={styles.subHeader__mainImg}>
+			<div className={styles.subHeader__content}>
+				<div className={styles.subHeader__stick}>
+					<span className={styles.subHeader__border} />
+
+					<div className={styles.subHeader__circle}>
+						<span />
+					</div>
+				</div>
+
+				<div className={styles.subHeader__info}>
+					<p
+						style={{width: '536px', marginLeft: '17px'}}
+						className={styles.subHeader__overTitle}
+					>
+						High quality production
+					</p>
+
+					<p
+						style={{width: '925px', marginTop: '23px'}}
+						className={styles.subHeader__title}
+					>
+						FREE SHIPPING IN THE CONTINENTAL USA
+					</p>
+
+					<p style={{width: '536px', marginTop: '32px'}} className={styles.subHeader__subTitle}>
+						Each piece of our furniture we handcraft is made to order with great attention to detail.
+					</p>
+
+					<button
+						style={{marginTop: '40px'}}
+						type="button"
+						className={styles.subHeader__btn}
+					>
+						go to catalog
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div className={styles.subHeader__imgs}>
+			<img src={Rectangle130} alt="" />
+			<img src={Rectangle131} alt="" />
+			<img src={Rectangle132} alt="" />
+		</div>
+	</div>
+);
+
+export default SubHeader;
