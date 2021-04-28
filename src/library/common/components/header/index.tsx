@@ -6,6 +6,7 @@ import LikeIcon from 'resources/icons/likeIcon';
 import LogoIcon from 'resources/images/logo.png';
 import cn from 'classnames';
 import styles from './styles.scss';
+import Button from '../ui/button';
 
 const Header = () => (
 	<header className={styles.wrap}>
@@ -81,12 +82,19 @@ const Header = () => (
 						Log in
 					</button>
 
-					<button
+					<Button
+						color="outlined"
+						size="small"
+						text="register account"
+						onClick={() => {}}
+					/>
+
+					{/* <button
 						className={cn(styles.nav__btn, styles.nav__border)}
 						type="button"
 					>
 						register account
-					</button>
+					</button> */}
 				</div>
 			</div>
 		</nav>

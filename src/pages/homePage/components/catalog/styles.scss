@@ -7,26 +7,4 @@
 	@include display(grid);
 	@include grid-template-columns(1fr 1fr 1fr 1fr);
 	@include grid-gap(30px);
-
-	&__seeCatalogBtn {
-		width: 100%;
-		max-width: 300px;
-		padding: 17px 85px;
-
-		background: #262623;
-		border: 1px solid #262623;
-		box-sizing: border-box;
-		border-radius: 2px;
-
-		font-family: Noto Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 16px;
-		line-height: 26px;
-		letter-spacing: 0.1em;
-		text-transform: uppercase;
-		color: #FFFFFF;
-
-		margin-top: 60px;
-	}
 }

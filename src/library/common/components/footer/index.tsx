@@ -1,6 +1,7 @@
 import React from 'react';
 import EmailIcon from 'resources/icons/email';
 import PhoneIcon from 'resources/icons/phone';
+import Button from '../ui/button';
 import styles from './styles.scss';
 
 const Footer = () => (
@@ -62,9 +63,12 @@ const Footer = () => (
 							placeholder="Enter your mail"
 						/>
 
-						<button type="button">
-							Sign Up
-						</button>
+						<Button
+							color="secondary"
+							style={{width: '100%', marginTop: '10px'}}
+							text="Sign Up"
+							onClick={() => {}}
+						/>
 					</div>
 				</div>
 			</div>

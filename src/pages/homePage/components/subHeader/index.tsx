@@ -3,6 +3,7 @@ import Rectangle131 from 'resources/images/Rectangle131.png';
 import Rectangle130 from 'resources/images/Rectangle130.png';
 import Rectangle132 from 'resources/images/Rectangle132.png';
 import styles from './styles.scss';
+import Button from 'library/common/components/ui/button';
 
 const SubHeader = () => (
 	<div className={styles.subHeader}>
@@ -35,13 +36,12 @@ const SubHeader = () => (
 						Each piece of our furniture we handcraft is made to order with great attention to detail.
 					</p>
 
-					<button
+					<Button
+						color="secondary"
+						onClick={() => {}}
 						style={{marginTop: '40px'}}
-						type="button"
-						className={styles.subHeader__btn}
-					>
-						go to catalog
-					</button>
+						text="go to catalog"
+					/>
 				</div>
 			</div>
 		</div>

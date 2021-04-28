@@ -1,3 +1,4 @@
+import Button from 'library/common/components/ui/button';
 import React from 'react';
 import styles from './styles.scss';
 
@@ -20,12 +21,11 @@ const Article = ({
 
 			<p className={styles.article__subTitle}>{subTitle}</p>
 
-			<button
-				className={styles.article__btn}
-				type="button"
-			>
-				Learn more
-			</button>
+			<Button
+				style={{marginTop: '30px'}}
+				onClick={() => {}}
+				text="Learn more"
+			/>
 		</div>
 
 		<div style={{backgroundImage: `url('${img}')`, width: '784px', height: '404px'}} />

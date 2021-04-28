@@ -1,3 +1,4 @@
+import Button from 'library/common/components/ui/button';
 import React from 'react';
 import Rectangle144 from 'resources/images/Rectangle144.png';
 import globalStyles from 'resources/styles/globalStyles.scss';
@@ -71,12 +72,11 @@ const Catalog = () => (
 		</div>
 
 		<div className={globalStyles.center}>
-			<button
-				type="button"
-				className={styles.catalog__seeCatalogBtn}
-			>
-				See catalog
-			</button>
+			<Button
+				style={{marginTop: '60px', width: '300px'}}
+				text="See catalog"
+				onClick={() => {}}
+			/>
 		</div>
 	</div>
 );
