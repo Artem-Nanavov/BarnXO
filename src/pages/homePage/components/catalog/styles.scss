@@ -1,0 +1,10 @@
+@import 'resources/styles/mixins.scss';
+
+.catalog {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1600px;
+	@include display(grid);
+	@include grid-template-columns(1fr 1fr 1fr 1fr);
+	@include grid-gap(30px);
+}

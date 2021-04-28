@@ -1,0 +1,62 @@
+@import 'resources/styles/mixins.scss';
+
+.wrap {
+	margin-top: 120px;
+	@include display(flex);
+	@include align-items(center);
+	@include justify-content(center);
+}
+
+.header {
+	width: 100%;
+	@include display(flex);
+	@include align-items(center);
+	@include justify-content(space-between);
+
+	&__choose {
+		@include display(flex);
+	}
+
+	&__btn {
+		width: 180px;
+		@include display(flex);
+		@include align-items(center);
+		@include justify-content(center);
+		height: 55px;
+
+		border: 1px solid #EBEBEB;
+		box-sizing: border-box;
+
+		& p {
+			@include display(flex);
+			font-family: Noto Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 30px;
+			color: #646464;
+			margin-left: 15px;
+		}
+	}
+
+	&__arrows {
+		height: 30px;
+		width: 190px;
+		@include display(flex);
+		@include align-items(center);
+		@include position(relative);
+	}
+}
+
+.blackBtn {
+	background: #262623;
+	border: 1px solid #262623;
+	
+	& p {
+		color: #FFFFFF;
+	}
+}
+
+code {
+	font-weight: 600;
+}

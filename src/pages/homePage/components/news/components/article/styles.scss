@@ -1,0 +1,33 @@
+@import 'resources/styles/mixins.scss';
+
+.article {
+	@include align-items(center);
+	max-width: 1600px;
+	@include display(flex);
+	@include justify-content(space-between);
+
+	&__text {
+		max-width: 628px;
+	}
+
+	&__title {
+		font-family: Playfair Display;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		line-height: 37px;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: #262623;
+	}
+
+	&__subTitle {
+		margin-top: 30px;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 30px;
+		color: rgba(38, 38, 35, 0.65);
+	}
+}

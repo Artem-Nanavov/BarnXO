@@ -1,0 +1,96 @@
+@import 'resources/styles/mixins.scss';
+
+.subHeader {
+	@include display(flex);
+	height: 807px;
+	width: 100vw;
+	
+	&__content {
+		@include position(relative);
+		margin-left: 160px;
+	}
+
+	&__info {
+		padding-top: 120px;
+	}
+
+	&__mainImg {
+		width: 100%;
+		height: calc(100% + 2px);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-image: url('../../../../resources/images/Rectangle.png');
+	}
+
+	&__imgs {
+		max-width: 401px;
+		height: 100%;
+		max-height: 807px;
+	}
+
+	&__overTitle {
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 26px;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+
+	&__title {
+		font-family: 'Playfair Display';
+		font-style: normal;
+		font-weight: normal;
+		font-size: 80px;
+		line-height: 88px;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+
+	&__subTitle {
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 26px;
+		color: #FFFFFF;
+	}
+
+	&__stick {
+		top: 0;
+		left: 0;
+		@include position(absolute);
+		width: 13px;
+		@include display(flex);
+		@include flex-direction(column);
+		@include align-items(center);
+	}
+
+	&__border {
+		width: 1px;
+		height: 129px;
+		background-color: #FFF;
+	}
+
+	&__circle {
+		width: 13px;
+		height: 13px;
+		background: #FFF;
+		box-sizing: border-box;
+		border-radius: 50%;
+		@include display(flex);
+		@include justify-content(center);
+		@include align-items(center);
+
+		& span {
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background-color: #190E00;
+		}
+	}
+}
