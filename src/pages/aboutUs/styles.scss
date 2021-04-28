@@ -1,0 +1,45 @@
+@import 'resources/styles/mixins.scss';
+
+.aboutUs {
+	margin-top: 60px;
+	@include display(flex);
+	@include justify-content(center);
+
+	&__content {
+		width: 100%;
+		max-width: 1600px;
+	}
+
+	& h2 {
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 30px;
+		text-transform: uppercase;
+		color: #262623;
+	}
+
+	& p {
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 30px;
+		color: rgba(38, 38, 35, 0.65);
+	}
+
+	&__text {
+		height: 277px;
+		@include display(flex);
+		@include flex-direction(column);
+		@include justify-content(space-between);
+	}
+
+	&__blockTwo {
+		margin-top: 60px;
+		@include display(grid);
+		@include grid-template-columns(1fr 1fr);
+		@include grid-column-gap(30px);
+	}
+}

@@ -2,8 +2,8 @@ import React from 'react';
 import Rectangle131 from 'resources/images/Rectangle131.png';
 import Rectangle130 from 'resources/images/Rectangle130.png';
 import Rectangle132 from 'resources/images/Rectangle132.png';
-import styles from './styles.scss';
 import Button from 'library/common/components/ui/button';
+import styles from './styles.scss';
 
 const SubHeader = () => (
 	<div className={styles.subHeader}>

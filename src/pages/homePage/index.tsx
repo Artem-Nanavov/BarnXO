@@ -5,7 +5,7 @@ import Catalog from './components/catalog';
 import Examples from './components/examples';
 import Info from './components/info';
 import News from './components/news';
-import Reviews from './components/reviews';
+import Reviews from '../../library/common/components/reviews';
 import SubHeader from './components/subHeader';
 
 const HomePage = () => (

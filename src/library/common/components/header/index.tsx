@@ -4,7 +4,6 @@ import ArrowIcon from 'resources/icons/arrowIcon';
 import CartIcon from 'resources/icons/cartIcon';
 import LikeIcon from 'resources/icons/likeIcon';
 import LogoIcon from 'resources/images/logo.png';
-import cn from 'classnames';
 import styles from './styles.scss';
 import Button from '../ui/button';
 
