@@ -3,12 +3,14 @@ import HopePage from 'pages/homePage';
 import {Route, Switch} from 'react-router-dom';
 import AboutUsPage from 'pages/aboutUs';
 import HistoryPage from 'pages/historyPage';
+import OurMissionPage from 'pages/ourMissionPage';
 
 const Routes = () => (
 	<Switch>
 		<Route exact path="/" component={HopePage} />
 		<Route exact path="/aboutUs" component={AboutUsPage} />
 		<Route exact path="/history" component={HistoryPage} />
+		<Route exact path="/ourMission" component={OurMissionPage} />
 	</Switch>
 );
 
