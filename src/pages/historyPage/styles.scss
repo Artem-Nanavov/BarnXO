@@ -1,0 +1,35 @@
+@import 'resources/styles/mixins.scss';
+
+.history {
+	width: 100vw;
+	margin-top: 60px;
+	@include display(flex);
+	@include justify-content(center);
+
+	&__content {
+		width: 100%;
+		max-width: 1600px;
+	}
+
+	&__text {
+		@include display(grid);
+		@include grid-template-columns(1fr 1fr);
+		@include grid-column-gap(30px);
+
+		& > div {
+			max-height: 457px;
+			@include display(flex);
+			@include flex-direction(column);
+			@include justify-content(space-between);
+		}
+
+		& p {
+			font-family: Noto Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 30px;
+			color: rgba(38, 38, 35, 0.65);
+		}
+	}
+}
