@@ -5,6 +5,7 @@ import AboutUsPage from 'pages/aboutUs';
 import HistoryPage from 'pages/historyPage';
 import OurMissionPage from 'pages/ourMissionPage';
 import CustomPage from 'pages/customPage';
+import CommercialPage from 'pages/commercialPage';
 
 const Routes = () => (
 	<Switch>
@@ -13,6 +14,7 @@ const Routes = () => (
 		<Route exact path="/history" component={HistoryPage} />
 		<Route exact path="/ourMission" component={OurMissionPage} />
 		<Route exact path="/custom" component={CustomPage} />
+		<Route exact path="/commercial" component={CommercialPage} />
 	</Switch>
 );
 

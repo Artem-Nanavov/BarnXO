@@ -8,7 +8,7 @@ interface IItem {
 	price: string;
 }
 
-const Item = ({
+const CatalogItem = ({
 	img,
 	title,
 	description,
@@ -34,4 +34,4 @@ const Item = ({
 	</div>
 );
 
-export default Item;
+export default CatalogItem;
