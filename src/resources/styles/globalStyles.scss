@@ -1,5 +1,16 @@
 @import './mixins.scss';
 
+.container {
+	width: 100vw;
+	@include display(flex);
+	@include justify-content(center);
+}
+
+.wrap {
+	width: 100%;
+	max-width: 1600px;
+}
+
 .h1_title {
 	font-family: Playfair Display;
 	font-style: normal;
