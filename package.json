@@ -34,6 +34,7 @@
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
+    "react-dropzone": "^11.3.2",
     "react-hot-loader": "^4.13.0",
     "react-router-dom": "5.2.0",
     "react-star-ratings": "^2.3.0",

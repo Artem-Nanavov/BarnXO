@@ -7,7 +7,7 @@ interface IReview {
 	img: any;
 	username: string;
 	date: string;
-	value: number
+	// value?: number
 	description: string;
 }
 
@@ -15,7 +15,7 @@ const Review = ({
 	img,
 	username,
 	date,
-	value,
+	// value,
 	description,
 }: IReview) => (
 	<div className={styles.review}>

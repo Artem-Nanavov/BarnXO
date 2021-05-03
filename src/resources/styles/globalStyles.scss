@@ -1,19 +1,23 @@
 @import './mixins.scss';
 
+.h1_title {
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 43px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #262623;
+}
+
 .title {
 	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 60px;
 
 	& h1 {
-		font-family: Playfair Display;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 35px;
-		line-height: 43px;
-		letter-spacing: 0.01em;
-		text-transform: uppercase;
-		color: #262623;
+		@extend .h1_title;
 	}
 
 	& div {
