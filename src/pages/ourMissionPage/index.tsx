@@ -32,7 +32,7 @@ const OurMissionPage = () => (
 				<h2>Responsibly, On Trend</h2>
 
 				<p>
-					Focusing on the environment doesn't mean style and the current trends simply go out the window. At BARN XO we create furniture that is not only on trend, but also timeless to ensure that piece will last a lifetime in both quality and style. We regularly work with interior designers which gives us an insight into what's hot now, and where the trends are going moving forward. This allows us to refine our offerings to fit what the market demands while staying true to our core focus of creating timeless, environmentally friendly furniture.
+					Focusing on the environment doesn&apos;t mean style and the current trends simply go out the window. At BARN XO we create furniture that is not only on trend, but also timeless to ensure that piece will last a lifetime in both quality and style. We regularly work with interior designers which gives us an insight into what's hot now, and where the trends are going moving forward. This allows us to refine our offerings to fit what the market demands while staying true to our core focus of creating timeless, environmentally friendly furniture.
 				</p>
 			</div>
 		</nav>

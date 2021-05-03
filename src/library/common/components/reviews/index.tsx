@@ -14,7 +14,6 @@ const Reviews = () => (
 				<Review
 					username="Beverly R."
 					date="June 6, 2019"
-					value={5}
 					img={Ellipse20}
 					description="Love the furniture. Barn XP made a beautiful unit that goes under my tv and a matching desk. Gream customer service too. Bv Roos"
 				/>
@@ -22,7 +21,6 @@ const Reviews = () => (
 				<Review
 					username="Beverly R."
 					date="June 6, 2019"
-					value={5}
 					img={Ellipse20}
 					description="Love the furniture. Barn XP made a beautiful unit that goes under my tv and a matching desk. Gream customer service too. Bv Roos"
 				/>
@@ -30,7 +28,6 @@ const Reviews = () => (
 				<Review
 					username="Beverly R."
 					date="June 6, 2019"
-					value={5}
 					img={Ellipse20}
 					description="Love the furniture. Barn XP made a beautiful unit that goes under my tv and a matching desk. Gream customer service too. Bv Roos"
 				/>
@@ -38,7 +35,6 @@ const Reviews = () => (
 				<Review
 					username="Beverly R."
 					date="June 6, 2019"
-					value={5}
 					img={Ellipse20}
 					description="Love the furniture. Barn XP made a beautiful unit that goes under my tv and a matching desk. Gream customer service too. Bv Roos"
 				/>
