@@ -9,6 +9,7 @@ import CommercialPage from 'pages/commercialPage';
 import MaterialsReclaimedWoodPage from 'pages/materialsReclaimedWoodPage';
 import MaterialsKiln from 'pages/materialsKiln';
 import MaterialsFinishes from 'pages/materialsFinishes';
+import ShowRoomPage from 'pages/showRoomPage';
 
 const Routes = () => (
 	<Switch>
@@ -21,6 +22,7 @@ const Routes = () => (
 		<Route exact path="/wood" component={MaterialsReclaimedWoodPage} />
 		<Route exact path="/kiln" component={MaterialsKiln} />
 		<Route exact path="/finishes" component={MaterialsFinishes} />
+		<Route exact path="/showroom" component={ShowRoomPage} />
 	</Switch>
 );
 
