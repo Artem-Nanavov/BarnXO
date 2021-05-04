@@ -9,7 +9,7 @@ import Reviews from '../../library/common/components/reviews';
 import SubHeader from './components/subHeader';
 
 const HomePage = () => (
-	<div>
+	<>
 		<Header />
 
 		<SubHeader />
@@ -25,7 +25,7 @@ const HomePage = () => (
 		<Reviews />
 
 		<Footer />
-	</div>
+	</>
 );
 
 export default HomePage;

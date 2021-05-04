@@ -1,5 +1,6 @@
 import SearchInput from 'pages/homePage/components/searchInput';
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import ArrowIcon from 'resources/icons/arrowIcon';
 import CartIcon from 'resources/icons/cartIcon';
 import LikeIcon from 'resources/icons/likeIcon';
@@ -12,11 +13,19 @@ const Header = () => (
 		<div className={styles.header}>
 			<div className={styles.content}>
 				<ul className={styles.header__list}>
-					<li className={styles.header__link}>Commercial</li>
+					<li className={styles.header__link}>
+						<NavLink to="/commercial">
+							<p>Commercial</p>
+						</NavLink>
+					</li>
 					<li className={styles.header__border} />
-					<li className={styles.header__link}>Showroom</li>
+					<li className={styles.header__link}>
+						<p>Showroom</p>
+					</li>
 					<li className={styles.header__border} />
-					<li className={styles.header__link}>Contact us</li>
+					<li className={styles.header__link}>
+						<p>Contact us</p>
+					</li>
 				</ul>
 
 				<div className={styles.header__options}>
@@ -58,7 +67,9 @@ const Header = () => (
 						</li>
 
 						<li className={styles.nav__link}>
-							<p>Custom</p>
+							<NavLink to="/custom">
+								<p>Custom</p>
+							</NavLink>
 						</li>
 
 						<li className={styles.nav__link}>

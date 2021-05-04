@@ -1,6 +1,7 @@
 import React from 'react';
 import EmailIcon from 'resources/icons/email';
 import PhoneIcon from 'resources/icons/phone';
+import {NavLink} from 'react-router-dom';
 import Button from '../ui/button';
 import styles from './styles.scss';
 
@@ -17,7 +18,9 @@ const Footer = () => (
 								<p>All Furniture</p>
 								<p>Home Furniture</p>
 								<p>Office Furniture</p>
-								<p>Wood, Metal Seating</p>
+								<NavLink to="/wood">
+									<p>Wood, Metal Seating</p>
+								</NavLink>
 								<p>DIY/Wholesale</p>
 							</div>
 						</li>
@@ -26,7 +29,9 @@ const Footer = () => (
 							<h2>MENU</h2>
 
 							<div className={styles.footer__block}>
-								<p>Home</p>
+								<NavLink to="/">
+									<p>Home</p>
+								</NavLink>
 								<p>Terms & Conditions</p>
 								<p>Privacy Policy</p>
 								<p>Warranties</p>
@@ -41,13 +46,13 @@ const Footer = () => (
 								<div>
 									<PhoneIcon />
 
-									<p>(847) 514-4276</p>
+									<a href="tel:(847) 514-4276">(847) 514-4276</a>
 								</div>
 
 								<div>
 									<EmailIcon />
 
-									<p>Info@barnxo.com</p>
+									<a href="mailto:Info@barnxo.com">Info@barnxo.com</a>
 								</div>
 							</div>
 						</li>
