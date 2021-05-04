@@ -1,0 +1,54 @@
+@import 'resources/styles/mixins.scss';
+
+.finishes {
+	&__content {
+		@include display(grid);
+		@include grid-template-columns(1fr 1fr 1fr);
+		@include grid-gap(30px);
+	}
+
+	& h3, & p, & h4 {
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: 600;
+	}
+
+	& h3 {
+		margin-top: 110px;
+		font-size: 20px;
+		line-height: 30px;
+		text-transform: uppercase;
+		color: #262623;
+	}
+
+	& p {
+		font-style: normal;
+		font-weight: normal;
+		margin-top: 30px;
+		font-size: 18px;
+		line-height: 30px;
+		color: rgba(38, 38, 35, 0.65);
+	}
+
+	&__item {
+		@include position(relative);
+		height: 395px;
+
+		& > div {
+			@include position(absolute);
+			left: 0;
+			bottom: 0;
+			padding: 30px;
+			width: 100%;
+			height: 86px;
+			background: rgba(0, 0, 0, 0.6);
+		}
+
+		& h4 {
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 26px;
+			color: #FFFFFF;
+		}
+	}
+}
