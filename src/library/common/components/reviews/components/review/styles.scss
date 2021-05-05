@@ -1,5 +1,3 @@
-@import 'resources/styles/mixins.scss';
-
 .review {
 	padding: 25px;
 	padding-top: 30px;
@@ -8,8 +6,8 @@
 
 	&__header {
 		width: 100%;
-		@include display(flex);
-		@include align-items(center);
+		display: flex;
+		align-items: center;
 	}
 
 	&__info {
@@ -45,14 +43,14 @@
 	}
 
 	&__rating {
-		@include display(flex);
-		@include align-items(center);
-		@include justify-content(space-between);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 
 		& > div {
-			@include display(grid);
-			@include grid-template-columns(1fr 1fr 1fr 1fr 1fr);
-			@include grid-column-gap(2.75px)
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			grid-column-gap: 2.75px;
 		}
 
 		& > p {

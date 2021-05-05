@@ -1,12 +1,10 @@
-@import 'resources/styles/mixins.scss';
-
 .form {
 	padding: 52px;
 	border: 1px solid #EBEBEB;
 
 	&__content {
-		@include display(grid);
-		@include grid-row-gap(24px);
+		display: grid;
+		grid-row-gap: 24px;
 	}
 
 	&__imageUploader {

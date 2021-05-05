@@ -1,10 +1,8 @@
-@import 'resources/styles/mixins.scss';
-
 .finishes {
 	&__content {
-		@include display(grid);
-		@include grid-template-columns(1fr 1fr 1fr);
-		@include grid-gap(30px);
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 30px;
 	}
 
 	& h3, & p, & h4 {
@@ -31,11 +29,11 @@
 	}
 
 	&__item {
-		@include position(relative);
+		position: relative;
 		height: 395px;
 
 		& > div {
-			@include position(absolute);
+			position: absolute;
 			left: 0;
 			bottom: 0;
 			padding: 30px;

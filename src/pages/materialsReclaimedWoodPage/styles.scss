@@ -1,13 +1,11 @@
-@import 'resources/styles/mixins.scss';
-
 .span {
 	margin: 10px 0;
 }
 
 .wood {
 	width: 100vw;
-	@include display(flex);
-	@include justify-content(center);
+	display: flex;
+	justify-content: center;
 
 	&__wrap {
 		margin-top: 60px;

@@ -1,0 +1,26 @@
+.login {
+	margin-top: 60px;
+
+	& p {
+		margin-top: 26px;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 30px;
+		color: rgba(38, 38, 35, 0.65);
+	}
+
+	& > div {
+		display: flex;
+		
+		& > div	{
+			width: 100%;
+			max-width: 679px;
+		}
+
+		& > div:nth-child(2) {
+			margin-left: 136px;
+		}
+	}
+}

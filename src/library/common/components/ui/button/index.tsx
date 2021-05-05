@@ -4,7 +4,7 @@ import styles from './styles.scss';
 
 interface IButton {
   text: string;
-  color?: 'primary' | 'secondary' | 'outlined';
+  color?: 'primary' | 'secondary' | 'outlined' | 'none';
   size?: 'small' | 'default';
   style?: React.CSSProperties;
   onClick: any;

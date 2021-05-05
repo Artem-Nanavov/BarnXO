@@ -1,9 +1,7 @@
-@import 'resources/styles/mixins.scss';
-
 .commercial {
 	width: 100vw;
-	@include display(flex);
-	@include justify-content(center);
+	display: flex;
+	justify-content: center;
 
 	&__wrap {
 		width: 100%;
@@ -33,8 +31,8 @@
 	}
 
 	&__catalog {
-		@include display(grid);
-		@include grid-template-columns(1fr 1fr 1fr 1fr);
-		@include grid-gap(30px);
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-gap: 30px;
 	}
 }
