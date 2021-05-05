@@ -14,6 +14,7 @@ import LoginPage from 'pages/loginPage';
 import LogoutPage from 'pages/logoutPage';
 import ChangePasswordPage from 'pages/changePasswordPage';
 import PersonalDetails from 'pages/personalDetails';
+import AccountPage from 'pages/accountPage';
 
 const Routes = () => (
 	<Switch>
@@ -31,6 +32,7 @@ const Routes = () => (
 		<Route exact path="/logout" component={LogoutPage} />
 		<Route exact path="/changePassword" component={ChangePasswordPage} />
 		<Route exact path="/personalDetails" component={PersonalDetails} />
+		<Route exact path="/account" component={AccountPage} />
 	</Switch>
 );
 

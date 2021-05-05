@@ -1,0 +1,13 @@
+.account {
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+
+	&__row {
+		& div {
+			margin-top: 30px;
+			display: grid;
+			grid-row-gap: 24px;
+		}
+	}
+}
