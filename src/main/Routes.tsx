@@ -12,6 +12,7 @@ import MaterialsFinishes from 'pages/materialsFinishes';
 import ShowRoomPage from 'pages/showRoomPage';
 import LoginPage from 'pages/loginPage';
 import LogoutPage from 'pages/logoutPage';
+import ChangePasswordPage from 'pages/changePasswordPage';
 
 const Routes = () => (
 	<Switch>
@@ -27,6 +28,7 @@ const Routes = () => (
 		<Route exact path="/showroom" component={ShowRoomPage} />
 		<Route exact path="/login" component={LoginPage} />
 		<Route exact path="/logout" component={LogoutPage} />
+		<Route exact path="/changePassword" component={ChangePasswordPage} />
 	</Switch>
 );
 

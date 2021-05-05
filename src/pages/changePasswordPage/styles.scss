@@ -1,0 +1,12 @@
+.changePassword {
+	margin-top: 60px;
+
+	&__inputs {
+		width: 100%;
+		max-width: 648px;
+		margin-top: 40px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 30px;
+	}
+}
