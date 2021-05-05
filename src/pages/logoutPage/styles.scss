@@ -1,0 +1,16 @@
+.logout {
+	margin-top: 60px;
+
+	& p {
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 30px;
+		color: rgba(38, 38, 35, 0.65);
+	}
+
+	& button {
+		margin-top: 54px;
+	}
+}
