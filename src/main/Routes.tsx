@@ -11,6 +11,7 @@ import MaterialsKiln from 'pages/materialsKiln';
 import MaterialsFinishes from 'pages/materialsFinishes';
 import ShowRoomPage from 'pages/showRoomPage';
 import LoginPage from 'pages/loginPage';
+import LogoutPage from 'pages/logoutPage';
 
 const Routes = () => (
 	<Switch>
@@ -25,6 +26,7 @@ const Routes = () => (
 		<Route exact path="/finishes" component={MaterialsFinishes} />
 		<Route exact path="/showroom" component={ShowRoomPage} />
 		<Route exact path="/login" component={LoginPage} />
+		<Route exact path="/logout" component={LogoutPage} />
 	</Switch>
 );
 
