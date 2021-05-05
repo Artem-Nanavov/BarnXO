@@ -65,3 +65,12 @@ h1, h2, h3, h4, h5, h6 {
 html, body {
   overflow-x: hidden;
 }
+
+p {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(38, 38, 35, 0.65);
+}
