@@ -1,10 +1,8 @@
-@import 'resources/styles/mixins.scss';
-
 .info {
 	cursor: pointer;
 	width: 100%;
 	margin: 0 auto;
 	max-width: 1600px;
-	@include display(grid);
-	@include grid-template-columns(1fr 1fr 1fr);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }

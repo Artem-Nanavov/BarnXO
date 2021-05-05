@@ -1,11 +1,9 @@
-@import 'resources/styles/mixins.scss';
-
 .examples {
 	margin: 0 auto;
 	margin-top: 120px;
 	width: 100%;
 	max-width: 1600px;
-	@include display(grid);
-	@include grid-template-columns(1fr 1fr 1fr);
-	@include grid-column-gap(30px);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 30px;
 }

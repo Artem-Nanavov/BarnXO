@@ -1,10 +1,8 @@
-@import 'resources/styles/mixins.scss';
-
 .news {
 	margin-top: 120px;
-	@include display(flex);
-	@include align-items(center);
-	@include justify-content(center);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .carousel {
@@ -12,16 +10,16 @@
 	max-width: 1600px;
 
 	&__content {
-		@include display(grid);
-		@include grid-row-gap(160px);
+		display: grid;
+		grid-row-gap: 160px;
 	}
 
 	&__counter {
 		width: 332px;
 		margin-top: 20px;
-		@include display(flex);
-		@include align-items(center);
-		@include justify-content(space-between);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 
 		& > div {
 			width: 270px;

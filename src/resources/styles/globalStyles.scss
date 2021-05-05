@@ -1,9 +1,7 @@
-@import './mixins.scss';
-
 .container {
 	width: 100vw;
-	@include display(flex);
-	@include justify-content(center);
+	display: flex;
+	justify-content: center;
 }
 
 .wrap {
@@ -42,7 +40,7 @@
 
 .center {
 	width: 100%;
-	@include display(flex);
-	@include align-items(center);
-	@include justify-content(center);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

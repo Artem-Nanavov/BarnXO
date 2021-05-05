@@ -1,10 +1,8 @@
-@import 'resources/styles/mixins.scss';
-
 .article {
-	@include align-items(center);
 	max-width: 1600px;
-	@include display(flex);
-	@include justify-content(space-between);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 
 	&__text {
 		max-width: 628px;

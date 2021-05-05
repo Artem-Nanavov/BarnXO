@@ -1,12 +1,10 @@
-@import 'resources/styles/mixins.scss';
-
 .post {
 	width: 100%;
 	height: 732px;
-	@include position(relative);
+	position: relative;
 
 	&__text {
-		@include position(absolute);
+		position: absolute;
 		left: 54px;
 		top: 494px;
 		max-width: 376px;

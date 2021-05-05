@@ -1,10 +1,8 @@
-@import 'resources/styles/mixins.scss';
-
 .ourMission {
 	margin-top: 60px;
 	width: 100vw;
-	@include display(flex);
-	@include justify-content(center);
+	display: flex;
+	justify-content: center;
 
 	&__content {
 		width: 100%;

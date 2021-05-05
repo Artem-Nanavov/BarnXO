@@ -1,9 +1,7 @@
-@import 'resources/styles/mixins.scss';
-
 .aboutUs {
 	margin-top: 60px;
-	@include display(flex);
-	@include justify-content(center);
+	display: flex;
+	justify-content: center;
 
 	&__content {
 		width: 100%;
@@ -31,15 +29,15 @@
 
 	&__text {
 		height: 277px;
-		@include display(flex);
-		@include flex-direction(column);
-		@include justify-content(space-between);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 
 	&__blockTwo {
 		margin-top: 60px;
-		@include display(grid);
-		@include grid-template-columns(1fr 1fr);
-		@include grid-column-gap(30px);
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 10px;
 	}
 }
