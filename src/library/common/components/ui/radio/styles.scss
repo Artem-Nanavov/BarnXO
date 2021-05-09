@@ -1,0 +1,41 @@
+.radio {
+	display: flex;
+	align-items: center;
+
+	& > div {
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		border: 1px solid #262623;
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		& > div {
+			display: none;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: #262623;
+		}
+	}
+
+	&__active {
+		& > div {
+			& > div {
+				display: block;
+			}
+		}
+	}
+
+	& p {
+		margin-left: 10px;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 26px;
+		color: #727270;
+	}
+}
