@@ -49,21 +49,171 @@ const Header = () => (
 
 					<ul className={styles.nav__links}>
 						<li className={styles.nav__link}>
-							<p>Company</p>
+							<div className={styles.nav__link_item}>
+								<p>Company</p>
 
-							<ArrowIcon />
+								<ArrowIcon />
+							</div>
+
+							<div className={styles.nav__link_navigation}>
+								<div style={{maxWidth: '169px'}} className={styles.nav__link_navigation_row}>
+									<NavLink to="/aboutUs">
+										<p>About Us</p>
+
+										<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+									</NavLink>
+
+									<NavLink to="/history">
+										<p>History</p>
+
+										<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+									</NavLink>
+
+									<NavLink to="/ourMission">
+										<p>Our Mission</p>
+
+										<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+									</NavLink>
+
+									<NavLink to="/blog">
+										<p>Blog</p>
+
+										<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+									</NavLink>
+								</div>
+							</div>
 						</li>
 
 						<li className={styles.nav__link}>
-							<p>Reviews</p>
+							<div className={styles.nav__link_item}>
+								<p>Reviews</p>
 
-							<ArrowIcon />
+								<ArrowIcon />
+							</div>
+
+							<div className={styles.nav__link_navigation}>
+								<div style={{maxWidth: '261px'}} className={styles.nav__link_navigation_row}>
+									<NavLink to="/googleReviews">
+										<p>Leave a Google Review</p>
+
+										<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+									</NavLink>
+								</div>
+							</div>
 						</li>
 
 						<li className={styles.nav__link}>
-							<p>Shop</p>
+							<div className={styles.nav__link_item}>
+								<p>Shop</p>
 
-							<ArrowIcon />
+								<ArrowIcon />
+							</div>
+
+							<div style={{left: 0}} className={styles.nav__link_navigation}>
+								<div style={{maxWidth: '1600px'}} className={styles.showWrap}>
+									<div className={styles.showWrap__row}>
+										<h3>HOME FURNITURE</h3>
+
+										<div>
+											<NavLink to="/googleReviews">
+												<p>Coffee Tables</p>
+
+												<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											</NavLink>
+
+											<NavLink to="/googleReviews">
+												<p>Dining Tables</p>
+
+												<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											</NavLink>
+
+											<NavLink to="/googleReviews">
+												<p>Entertainment Centers</p>
+
+												<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											</NavLink>
+
+											<NavLink to="/googleReviews">
+												<p>Entry Sofa,  Console Tables</p>
+
+												<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											</NavLink>
+
+											<NavLink to="/googleReviews">
+												<p>Shelving, Organization</p>
+
+												<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											</NavLink>
+										</div>
+									</div>
+
+									<div className={styles.showWrap__row}>
+										<h3>HOME FURNITURE</h3>
+
+										<div>
+											<NavLink to="/googleReviews">
+												<p>Conference Tables</p>
+
+												<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											</NavLink>
+
+											<NavLink to="/googleReviews">
+												<p>Executive, Computer Tables</p>
+
+												<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											</NavLink>
+										</div>
+									</div>
+
+									<div className={styles.showWrap__row}>
+										<h3>WOOD, METAL SEATING</h3>
+
+										<div>
+											<NavLink to="/googleReviews">
+												<p>Barstools, Stools</p>
+
+												<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											</NavLink>
+
+											<NavLink to="/googleReviews">
+												<p>Benches</p>
+
+												<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											</NavLink>
+
+											<NavLink to="/googleReviews">
+												<p>Chairs</p>
+
+												<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											</NavLink>
+										</div>
+									</div>
+
+									<div className={styles.showWrap__row}>
+										<h3>DYI/WHOLESALE</h3>
+
+										<div>
+											<NavLink to="/googleReviews">
+												<p>Reclaimed Accent Walls</p>
+
+												<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											</NavLink>
+
+											<NavLink to="/googleReviews">
+												<p>Reclaimed Wood Flooring</p>
+
+												<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											</NavLink>
+
+											<NavLink to="/googleReviews">
+												<p>Table Legs</p>
+
+												<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											</NavLink>
+										</div>
+									</div>
+								</div>
+							</div>
 						</li>
 
 						<li className={styles.nav__link}>
@@ -73,9 +223,33 @@ const Header = () => (
 						</li>
 
 						<li className={styles.nav__link}>
-							<p>Materials</p>
+							<div className={styles.nav__link_item}>
+								<p>Materials</p>
 
-							<ArrowIcon />
+								<ArrowIcon />
+							</div>
+
+							<div className={styles.nav__link_navigation}>
+								<div style={{maxWidth: '295px'}} className={styles.nav__link_navigation_row}>
+									<NavLink to="/wood">
+										<p>Reclaimed Wood</p>
+
+										<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+									</NavLink>
+
+									<NavLink to="/kiln">
+										<p>Kiln Dried Reclaimed Wood</p>
+
+										<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+									</NavLink>
+
+									<NavLink to="/finishes">
+										<p>Finishes</p>
+
+										<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+									</NavLink>
+								</div>
+							</div>
 						</li>
 
 						<li>

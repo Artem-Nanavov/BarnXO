@@ -72,12 +72,25 @@
 }
 
 .nav {
+	position: relative;
 	width: 100vw;
 	height: 70px;
 	background-color: #EFEFEF;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	& p {
+		margin-right: 10px;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: #262623;
+	}
 
 	&__info {
 		width: 1095px;
@@ -94,19 +107,61 @@
 	}
 
 	&__link {
-		display: flex;
-		align-items: center;
+		&_item {
+			display: flex;
+			align-items: center;
+			margin-top: 1.5px;
+			border-bottom: 1.5px solid rgba(0, 0, 0, 0);
+		}
 
-		& p {
-			margin-right: 10px;
-			font-family: Noto Sans;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 16px;
-			line-height: 24px;
-			letter-spacing: 0.04em;
-			text-transform: uppercase;
-			color: #262623;
+		&_navigation {
+			z-index: 100;
+			display: none;
+			position: absolute;
+			top: 47px;
+			width: 100%;
+
+			& p {
+				color: #262623;
+				text-transform: none;
+			}
+
+			&_row {
+				margin-top: 23px;
+				background-color: #EFEFEF;
+				box-shadow: 0px 20px 30px rgba(61, 61, 64, 0.5);
+
+				padding: 15px 20px;
+
+				display: grid;
+				grid-row-gap: 16px;
+
+				& a {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;	
+				}
+
+				& h3 {
+					font-family: Noto Sans;
+					font-style: normal;
+					font-weight: 600;
+					font-size: 20px;
+					line-height: 24px;
+					letter-spacing: 0.04em;
+					color: #262623;
+				}
+			}
+		}
+
+		&:hover {
+			.nav__link_navigation {
+				display: block;
+			}
+
+			.nav__link_item {
+				border-bottom: 1.5px solid #262623;
+			}
 		}
 	}
 
@@ -134,5 +189,43 @@
 		letter-spacing: 0.04em;
 		text-transform: uppercase;
 		color: #190E00;
+	}
+}
+
+.showWrap {
+	margin: 0 auto;
+	margin-top: 23px;
+	display: flex;
+	justify-content: space-between;
+	background: #EFEFEF;
+	box-shadow: 0px 20px 30px rgba(61, 61, 64, 0.5);
+	padding: 35px 80px;
+
+	& .nav__link_navigation_row {
+		background-color: rgba(0, 0, 0, 0);
+	}
+
+	&__row {
+		& a {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;	
+		}
+
+		& h3 {
+			font-family: Noto Sans;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 24px;
+			letter-spacing: 0.04em;
+			color: #262623;
+		}
+
+		& > div {
+			margin-top: 24px;
+			display: grid;
+			grid-row-gap: 16px;
+		}
 	}
 }
