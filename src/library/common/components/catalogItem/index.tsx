@@ -1,4 +1,6 @@
 import React from 'react';
+import Button from '../ui/button';
+import Favorite from '../ui/favorite';
 import styles from './styles.scss';
 
 interface IItem {
@@ -30,6 +32,15 @@ const CatalogItem = ({
 				$
 				{price}
 			</p>
+		</div>
+
+		<div className={styles.item__actions}>
+			<Favorite onClick={() => {}} />
+
+			<Button
+				onClick={() => {}}
+				text="add to cart"
+			/>
 		</div>
 	</div>
 );

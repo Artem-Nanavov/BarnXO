@@ -170,26 +170,6 @@
 		align-items: center;
 		justify-content: space-between;
 	}
-
-	&__btn {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 11px 13px;
-		cursor: pointer;
-
-		font-family: Noto Sans;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 24px;
-		display: flex;
-		align-items: center;
-		text-align: center;
-		letter-spacing: 0.04em;
-		text-transform: uppercase;
-		color: #190E00;
-	}
 }
 
 .showWrap {

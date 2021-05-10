@@ -1,0 +1,35 @@
+.favorite {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #262623;
+	box-sizing: border-box;
+	background-color: #FFF;
+	transition: all .3s;
+
+	& svg:nth-child(2) {
+		display: none;
+	}
+
+	&:hover {
+		background: #21211E;
+
+		& svg:nth-child(1) path {
+			stroke: #FFF;
+		}
+	}
+
+	&:active {
+		background: #21211E;
+
+		& svg:nth-child(2) {
+			display: block;
+		}
+
+		& svg:nth-child(1) {
+			display: none;
+		}
+	}
+}
