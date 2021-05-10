@@ -17,6 +17,7 @@ import PersonalDetails from 'pages/personalDetails';
 import AccountPage from 'pages/accountPage';
 import RegPage from 'pages/regPage';
 import ReviewsPage from 'pages/reviewsPage';
+import ArticlesPage from 'pages/articles';
 
 const Routes = () => (
 	<Switch>
@@ -37,6 +38,7 @@ const Routes = () => (
 		<Route exact path="/account" component={AccountPage} />
 		<Route exact path="/reg" component={RegPage} />
 		<Route exact path="/reviews" component={ReviewsPage} />
+		<Route exact path="/articles" component={ArticlesPage} />
 	</Switch>
 );
 
