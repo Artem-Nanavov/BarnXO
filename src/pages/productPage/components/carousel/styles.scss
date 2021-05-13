@@ -1,0 +1,33 @@
+.carousel {
+	display: grid;
+	grid-row-gap: 40px;
+
+	& > img {
+		width: 100%;
+		max-width: 786px;
+		height: 505px;
+	}
+
+	&__subImgs {
+		display: grid;
+		grid-template-columns: 241px 241px 241px;
+		grid-column-gap: 30px;
+		height: 164px;
+	}
+
+	&__item {
+		& > img {
+			max-width: 241px;
+			max-height: 164px;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__selected {
+		border: 2px solid #EBEBEB;
+		box-sizing: border-box;
+		border-radius: 5px;
+		padding: 9px;
+	}
+}

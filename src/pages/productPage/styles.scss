@@ -1,0 +1,63 @@
+.product {
+	margin-top: 100px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 30px;
+
+	& h1, & h2 {
+		font-family: Playfair Display SC;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		line-height: 43px;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: #262623;
+	}
+
+	&__subTitle {
+		margin-top: 16px;
+		margin-bottom: 40px;
+		display: flex;
+		align-items: center;
+
+		& > p {
+			margin-left: 50px;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 22px;	
+			color: #777777;
+		}
+	}
+
+	&__rating {
+		display: flex;
+		align-items: center;
+
+		& p {
+			margin-left: 18px;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 22px;
+			color: #777777;
+		}
+	}
+
+	&__description {
+		margin-top: 104px;
+	}
+
+	&__tags {
+		max-width: 775px;
+		width: 100%;
+		margin-top: 42px;
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 10px;
+		column-gap: 15px;
+	}
+
+	&__text {
+		margin-top: 30px;
+	}
+}
