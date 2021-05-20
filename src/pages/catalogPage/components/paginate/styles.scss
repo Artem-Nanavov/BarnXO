@@ -1,0 +1,49 @@
+.pagination {
+	margin-top: 30px;
+	display: flex;
+
+	& a {
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 22px;
+		text-align: center;
+		color: #262623;
+	}
+
+	&__breakMe, &__page {
+		border: 1px solid #EBEBEB;
+		box-sizing: border-box;
+		width: 100px;
+		height: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	&__page {
+		&:hover {
+			border: 1px solid #262623;
+		}
+
+		&_active {
+			& a {
+				color: #FFFFFF;
+			}
+
+			background: #262623;
+			border: 1px solid #262623;
+		}
+	}
+
+	&__previous, &__next {
+		width: 100%;
+		max-width: 270px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid #EBEBEB;
+		box-sizing: border-box;
+	}
+}

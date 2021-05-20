@@ -8,8 +8,8 @@ import globalStyles from 'resources/styles/globalStyles.scss';
 import image57 from 'resources/images/image57.png';
 import Ellipse20 from 'resources/images/Ellipse20.png';
 import Review from 'library/common/components/reviews/components/review';
-import styles from './styles.scss';
 import Button from 'library/common/components/ui/button';
+import styles from './styles.scss';
 
 const ReviewsPage = () => (
 	<>

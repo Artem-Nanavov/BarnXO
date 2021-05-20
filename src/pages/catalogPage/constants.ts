@@ -1,0 +1,2 @@
+export const SET_FILTERS = 'SET_FILTERS';
+export const SET_SEARCH_PHRASE = 'SET_SEARCH_PHRASE';

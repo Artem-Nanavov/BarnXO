@@ -1,21 +1,15 @@
 import React from 'react';
+import { ICatalogItem } from 'types/catalog';
 import Button from '../ui/button';
 import Favorite from '../ui/favorite';
 import styles from './styles.scss';
-
-interface IItem {
-	img: any;
-	title: string;
-	description: string;
-	price: string;
-}
 
 const CatalogItem = ({
 	img,
 	title,
 	description,
 	price,
-}: IItem) => (
+}: ICatalogItem) => (
 	<div className={styles.item}>
 		<div className={styles.item__img}>
 			<img src={img} alt="" />
