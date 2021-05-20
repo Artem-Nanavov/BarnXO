@@ -1,0 +1,43 @@
+.select {
+	width: 100%;
+	height: 70px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	
+	&__header {
+		height: 70px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		& svg {
+			margin-left: 17px;
+		}
+	}
+
+	&__values {
+		border-radius: 0 0 2px 2px;
+		background-color: #FFF;
+		padding: 15px;
+		display: none;
+		width: 100%;
+		position: absolute;
+		top: 56px;
+		grid-row-gap: 8px;
+		border: 1px solid #EBEBEB;
+		border-top: none;
+	}
+
+	&__item {}
+
+	&__show {
+		.select {
+			&__values {
+				display: grid;
+			}
+		}
+	}
+}

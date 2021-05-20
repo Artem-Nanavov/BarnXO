@@ -1,0 +1,47 @@
+.resetFilters {
+	margin-top: 16px;
+	display: flex;
+	align-items: center;
+
+	&__filters {
+		display: flex;
+		column-gap: 10px;
+		flex-wrap: wrap;
+		row-gap: 10px;
+	}
+
+	&__item {
+		padding: 0 20px 0 12px;
+		display: flex;
+		align-items: center;
+		background: rgba(38, 38, 35, 0.1);
+
+		& p {
+			font-family: Noto Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 39px;
+			color: #262623;
+		}
+
+		& button {
+			margin-left: 10px;
+			background-color: rgba(0, 0, 0, 0);
+		}
+	}
+
+	&__resetAll {
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 42px;
+		display: flex;
+		align-items: center;
+		text-decoration-line: underline;
+		color: #262623;
+		margin-left: 10px;
+		background-color: rgba(0, 0, 0, 0);
+	}
+}

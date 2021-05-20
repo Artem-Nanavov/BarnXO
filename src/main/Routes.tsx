@@ -19,6 +19,7 @@ import RegPage from 'pages/regPage';
 import ReviewsPage from 'pages/reviewsPage';
 import ArticlesPage from 'pages/articles';
 import ProductPage from 'pages/productPage/containers/productPageContainer';
+import CatalogPageContainer from 'pages/catalogPage/containers/catalogPageContainer';
 
 const Routes = () => (
 	<Switch>
@@ -41,6 +42,7 @@ const Routes = () => (
 		<Route exact path="/reviews" component={ReviewsPage} />
 		<Route exact path="/articles" component={ArticlesPage} />
 		<Route exact path="/product" component={ProductPage} />
+		<Route exact path="/catalog" component={CatalogPageContainer} />
 	</Switch>
 );
 

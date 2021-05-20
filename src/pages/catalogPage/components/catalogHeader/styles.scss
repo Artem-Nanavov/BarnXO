@@ -1,0 +1,13 @@
+.catalogHeader {
+	margin-top: 30px;
+	display: grid;
+	border: 1px solid #EBEBEB;
+	box-sizing: border-box;
+	grid-template-columns: 1fr 1px 146px 1px 146px 1px 146px;
+
+	&__border {
+		background-color: #EBEBEB;
+		height: 100%;
+		width: 1px;
+	}
+}
