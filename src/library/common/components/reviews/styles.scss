@@ -11,8 +11,14 @@
 }
 
 .review {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-column-gap: 30px;
 	margin-top: 30px;
+	margin-left: -12px;
+}
+
+@media screen and (max-width: 1632px) {
+	.wrap {
+		& > div {
+			margin: 0 32px;
+		}
+	}
 }

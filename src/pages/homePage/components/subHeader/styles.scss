@@ -10,6 +10,12 @@
 
 	&__info {
 		padding-top: 120px;
+
+		& p:nth-child(1) {width: 536px; margin-left: 17px; }
+
+		& p:nth-child(2) { width: 925px; margin-top: 23px; }
+		
+		& p:nth-child(3) { width: 536px; margin-top: 32px; }
 	}
 
 	&__mainImg {
@@ -89,6 +95,45 @@
 			height: 7px;
 			border-radius: 50%;
 			background-color: #190E00;
+		}
+	}
+}
+
+@media screen and (max-width: 1560px) {
+	.subHeader {
+		height: 600px;
+
+		&__content {
+			margin-left: 16px;
+		}
+
+		&__imgs {
+			display: none;
+		}
+
+		&__title {
+			font-size: 54px;
+			line-height: 62px;
+		}
+
+		&__mainImg {
+			height: 600px;
+		}
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.subHeader {
+		&__title {
+			font-size: 32px;
+			line-height: 40px;
+		}
+
+		&__info {
+			& p:nth-child(1), & p:nth-child(2), & p:nth-child(3) {
+				width: 100%;
+				margin-right: 16px;
+			}
 		}
 	}
 }

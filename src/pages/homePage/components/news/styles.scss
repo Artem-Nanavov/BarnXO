@@ -43,3 +43,19 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1632px) {
+	.news {
+		padding: 0 16px;
+	}
+}
+
+@media screen and (max-width: 1210px) {
+	.carousel {
+		max-width: 628px;
+
+		&__content > div:nth-child(1) {
+			display: none;
+		}
+	}
+}

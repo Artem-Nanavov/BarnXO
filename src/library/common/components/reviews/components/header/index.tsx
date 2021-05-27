@@ -4,7 +4,19 @@ import smallGoogleIcon from 'resources/images/smallGoogleIcon.png';
 import cn from 'classnames';
 import styles from './styles.scss';
 
-const Header = () => (
+interface IHeader {
+	currentValue: number;
+	maxValues: number;
+	nextPageHandler: () => void;
+	prevPageHandler: () => void;
+}
+
+const Header = ({
+	currentValue,
+	maxValues,
+	nextPageHandler,
+	prevPageHandler,
+}: IHeader) => (
 	<div className={styles.wrap}>
 		<div className={styles.header}>
 			<div className={styles.header__choose}>
@@ -46,23 +58,25 @@ const Header = () => (
 			<div className={styles.header__arrows}>
 				<HalfArrow
 					height="15px"
+					fill={currentValue === 0 ? 'rgba(38, 38, 35, 0.2)' : '#262623'}
 					style={{
 						transform: 'rotate(180deg)',
 						position: 'absolute',
 						top: 0,
 						left: 0,
 					}}
-					fill="rgba(38, 38, 35, 0.2)"
+					onClick={prevPageHandler}
 				/>
 
 				<HalfArrow
 					height="15px"
-					fill="#262623"
+					fill={currentValue === maxValues ? 'rgba(38, 38, 35, 0.2)' : '#262623'}
 					style={{
 						position: 'absolute',
 						bottom: 0,
 						right: 0,
 					}}
+					onClick={nextPageHandler}
 				/>
 			</div>
 		</div>

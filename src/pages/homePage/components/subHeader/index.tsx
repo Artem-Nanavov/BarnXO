@@ -19,20 +19,18 @@ const SubHeader = () => (
 
 				<div className={styles.subHeader__info}>
 					<p
-						style={{width: '536px', marginLeft: '17px'}}
 						className={styles.subHeader__overTitle}
 					>
 						High quality production
 					</p>
 
 					<p
-						style={{width: '925px', marginTop: '23px'}}
 						className={styles.subHeader__title}
 					>
 						FREE SHIPPING IN THE CONTINENTAL USA
 					</p>
 
-					<p style={{width: '536px', marginTop: '32px'}} className={styles.subHeader__subTitle}>
+					<p className={styles.subHeader__subTitle}>
 						Each piece of our furniture we handcraft is made to order with great attention to detail.
 					</p>
 

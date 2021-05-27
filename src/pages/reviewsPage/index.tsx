@@ -32,7 +32,12 @@ const ReviewsPage = () => (
 				</div>
 
 				<div className={styles.reviews__reviews}>
-					<ReviewsHeader />
+					<ReviewsHeader
+						currentValue={0}
+						maxValues={1}
+						nextPageHandler={() => {}}
+						prevPageHandler={() => {}}
+					/>
 
 					<div className={styles.reviews__grid}>
 						<Review
