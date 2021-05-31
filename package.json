@@ -47,6 +47,7 @@
     "redux-devtools-extension": "^2.13.7",
     "redux-saga": "0.16.2",
     "serialize-javascript": "2.1.2",
+    "serve": "^11.3.2",
     "simple-progress-webpack-plugin": "1.1.2",
     "stylelint": "9.10.1",
     "stylelint-webpack-plugin": "0.10.5",
