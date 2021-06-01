@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 import Ellipse20 from 'resources/images/Ellipse20.png';
+// @ts-ignore
 import Carousel, {slidesToShowPlugin} from '@brainhubeu/react-carousel';
 import Header from './components/header';
 import Review from './components/review';
@@ -17,7 +18,36 @@ const plugins = [
 ];
 
 const breakpoints = {
-	
+	1632: {
+		plugins: [
+			{
+				resolve: slidesToShowPlugin,
+				options: {
+					numberOfSlides: 3,
+				},
+			},
+		],
+	},
+	1190: {
+		plugins: [
+			{
+				resolve: slidesToShowPlugin,
+				options: {
+					numberOfSlides: 2,
+				},
+			},
+		],
+	},
+	780: {
+		plugins: [
+			{
+				resolve: slidesToShowPlugin,
+				options: {
+					numberOfSlides: 1,
+				},
+			},
+		],
+	},
 };
 
 const reviews = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
@@ -48,6 +78,7 @@ const Reviews = () => {
 						value={value}
 						plugins={plugins}
 						onChange={change}
+						breakpoints={breakpoints}
 					>
 						{
 							reviews.map(() => (
