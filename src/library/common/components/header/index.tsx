@@ -1,5 +1,6 @@
 import SearchInput from 'pages/homePage/components/searchInput';
 import React from 'react';
+import cn from 'classnames';
 import {NavLink} from 'react-router-dom';
 import ArrowIcon from 'resources/icons/arrowIcon';
 import CartIcon from 'resources/icons/cartIcon';
@@ -11,6 +12,12 @@ import styles from './styles.scss';
 import Button from '../ui/button';
 
 const Header = () => {
+	const [isOpenBurger, setIsOpenBurger] = React.useState(false);
+
+	React.useEffect(() => {
+		document.body.style.overflow = isOpenBurger ? 'hidden' : '';
+	}, [isOpenBurger]);
+
 	const dispatch = useDispatch();
 
 	const navigateToLogin = React.useCallback(() => {
@@ -57,9 +64,18 @@ const Header = () => {
 
 			<nav className={styles.nav}>
 				<div className={styles.content}>
-					<div className={styles.nav__info}>
+					<div className={styles.content__logo}>
 						<img src={LogoIcon} alt="" />
 
+						<div
+							onClick={() => setIsOpenBurger(!isOpenBurger)}
+							className={cn(styles.nav__burger, {[styles.nav__burger_active]: isOpenBurger})}
+						>
+							<span />
+						</div>
+					</div>
+
+					<div className={cn(styles.nav__info, {[styles.nav__info_active]: isOpenBurger})}>
 						<ul className={styles.nav__links}>
 							<li className={styles.nav__link}>
 								<div className={styles.nav__link_item}>

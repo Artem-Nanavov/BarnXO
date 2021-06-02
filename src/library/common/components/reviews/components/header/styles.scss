@@ -11,6 +11,10 @@
 	align-items: center;
 	justify-content: space-between;
 
+	&__select {
+		display: none;
+	}
+
 	&__choose {
 		display: flex;
 	}
@@ -57,4 +61,22 @@
 
 code {
 	font-weight: 600;
+}
+
+@media screen and (max-width: 1632px) {
+	.header {
+		margin: 0 16px;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.header {
+		&__select {
+			display: block;
+		}
+
+		&__choose {
+			display: none;
+		}
+	}
 }

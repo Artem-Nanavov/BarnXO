@@ -6,6 +6,7 @@ interface IHalfArrow {
 	height?: string;
 	fill?: string;
 	style?: any;
+	onClick?: () => void;
 }
 
 const HalfArrow = ({
@@ -13,8 +14,9 @@ const HalfArrow = ({
 	height = '17px',
 	fill = '#FCFCFC',
 	style = {},
+	onClick = () => {},
 }: IHalfArrow) => (
-	<svg style={style} width={width} height={height} viewBox="0 0 77 17" fill="none">
+	<svg onClick={onClick} style={style} width={width} height={height} viewBox="0 0 77 17" fill="none">
 		<path d="M0 1L74.9998 1.00001L59.9998 16" stroke={fill} strokeWidth="1.6" />
 	</svg>
 );

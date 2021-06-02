@@ -3,6 +3,18 @@
 	margin: 0 auto;
 	max-width: 1600px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
+	grid-gap: 29.3px;
+}
+
+@media screen and (max-width: 1632px) {
+	.catalog {
+		padding: 0 16px;
+	}
+}
+
+@media screen and (max-width: 817px) {
+	.catalog {
+		grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+	}
 }

@@ -28,7 +28,12 @@ const Article = ({
 			/>
 		</div>
 
-		<div style={{backgroundImage: `url('${img}')`, width: '784px', height: '404px'}} />
+		<div
+			className={styles.article__img}
+			style={{
+				backgroundImage: `url('${img}')`,
+			}}
+		/>
 	</div>
 );
 

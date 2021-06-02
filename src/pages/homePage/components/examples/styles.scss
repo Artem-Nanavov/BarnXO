@@ -4,6 +4,28 @@
 	width: 100%;
 	max-width: 1600px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 30px;
+	grid-template-columns: minmax(288px, 513px) minmax(288px, 513px) minmax(288px, 513px);
+	grid-gap: 30px;
+}
+
+@media screen and (max-width: 1632px) {
+	.examples {
+		padding: 0 16px;
+	}
+}
+
+@media screen and (max-width: 956px) {
+	.examples {
+		padding: 0 16px;
+		grid-template-columns: minmax(288px, 513px) minmax(288px, 513px);
+	}
+}
+
+@media screen and (max-width: 638px) {
+	.examples {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 30px;
+	}
 }

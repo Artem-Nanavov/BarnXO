@@ -24,7 +24,11 @@ const Select = ({
 }: ISelect) => {
 	const [showSelect, setShowSelect] = React.useState(false);
 	const selectRef = React.useRef(null);
-	console.log('showSelect', showSelect);
+
+	const selectValueHandler = (_value: ISelectValue) => {
+		setValue(_value);
+		setShowSelect(false);
+	};
 
 	useClickOutside(selectRef, () => setShowSelect(false));
 
@@ -47,7 +51,7 @@ const Select = ({
 				{
 					values.map((_value) => (
 						<li
-							onClick={() => setValue(_value)}
+							onClick={() => selectValueHandler(_value)}
 							className={styles.select__item}
 							key={_value.key}
 						>
