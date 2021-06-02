@@ -1,6 +1,6 @@
 .footer {
 	margin-top: 120px;
-	height: 402px;
+	min-height: 402px;
 	width: 100vw;
 	background-color: #262623;
 	display: flex;
@@ -10,6 +10,7 @@
 
 	& > div {
 		&:nth-child(1) {
+			min-height: 340px;
 			width: 100%;
 			max-width: 1600px;
 			height: 100%;
@@ -23,6 +24,10 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+
+		@media screen and (max-width: 1632px) {
+			margin: 0 16px;
+		}
 	}
 
 	&__row {
@@ -76,6 +81,10 @@
 		align-items: center;
 		justify-content: center;
 
+		@media screen and (max-width: 1632px) {
+			padding: 0 16px;
+		}
+
 		& > div {
 			width: 100%;
 			max-width: 1600px;
@@ -99,7 +108,8 @@
 	}
 
 	&__signUp {
-		width: 377px;
+		max-width: 377px;
+		width: 100%;
 		height: 100%;
 		max-height: 240px;
 
@@ -142,6 +152,28 @@
 					color: rgba(255, 255, 255, 0.4);
 				}
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 1299px) {
+	.footer {
+		& > div:nth-child(1) {
+			display: flex;
+			justify-content: center;
+		}
+
+		&__row {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-row-gap: 24px;
+		}
+
+		&__content {
+			padding: 16px 0;
+			width: auto;
+			display: grid;
+			grid-row-gap: 32px;
 		}
 	}
 }
