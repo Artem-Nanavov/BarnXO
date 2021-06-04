@@ -2,7 +2,12 @@
 	&__content {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: repeat(auto-fit, minmax(513px, 1fr));
 		grid-gap: 30px;
+
+		@media screen and (max-width: 545px) {
+			grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+		}
 	}
 
 	& h3, & p, & h4 {
@@ -31,6 +36,9 @@
 	&__item {
 		position: relative;
 		height: 395px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 
 		& > div {
 			position: absolute;
