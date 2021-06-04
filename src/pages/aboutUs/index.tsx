@@ -9,12 +9,12 @@ import globalStyles from 'resources/styles/globalStyles.scss';
 import styles from './styles.scss';
 
 const AboutUsPage = () => (
-	<div>
+	<>
 		<Header />
 
 		<div className={styles.aboutUs}>
 			<div className={styles.aboutUs__content}>
-				<div style={{maxWidth: '864px'}} className={globalStyles.title}>
+				<div style={{maxWidth: '865px'}} className={globalStyles.title}>
 					<h1>About BARN XO | Reclaimed wood furniture</h1>
 
 					<div />
@@ -58,7 +58,7 @@ const AboutUsPage = () => (
 		<Reviews />
 
 		<Footer />
-	</div>
+	</>
 );
 
 export default AboutUsPage;
