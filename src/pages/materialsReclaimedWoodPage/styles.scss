@@ -12,6 +12,14 @@
 		width: 100%;
 		max-width: 1600px;
 
+		@media screen and (max-width: 1632px) {
+			padding: 0 16px;
+
+			& img {
+				width: 100%;
+			}
+		}
+
 		& code {
 			font-style: italic;
 			font-weight: 500;
