@@ -1,6 +1,8 @@
 import Button from 'library/common/components/ui/button';
 import FormInput from 'library/common/components/ui/formInput';
 import React from 'react';
+import {push} from 'connected-react-router';
+import {useDispatch} from 'react-redux';
 import styles from './styles.scss';
 
 const regex = /^([A-Z|a-z|0-9](\.|_){0,1})+[A-Z|a-z|0-9]\@([A-Z|a-z|0-9])+((\.){0,1}[A-Z|a-z|0-9]){2}\.[a-z]{2,3}$/gm;
@@ -13,6 +15,8 @@ const mw = {
 };
 
 const LoginForm = () => {
+	const dispatch = useDispatch();
+
 	const [email, setEmail] = React.useState('');
 	const [password, setPassword] = React.useState('');
 
@@ -61,7 +65,7 @@ const LoginForm = () => {
 				<Button
 					style={{width: '100%'}}
 					color="none"
-					onClick={() => {}}
+					onClick={() => dispatch(push('/changePassword'))}
 					text="Forgotten password"
 				/>
 			</div>
