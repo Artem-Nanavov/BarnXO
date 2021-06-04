@@ -4,6 +4,14 @@
 	display: flex;
 	justify-content: center;
 
+	@media screen and (max-width: 1632px) {
+		padding: 0 16px;
+
+		& img {
+			width: 100%;
+		}
+	}
+
 	&__content {
 		width: 100%;
 		max-width: 1600px;
