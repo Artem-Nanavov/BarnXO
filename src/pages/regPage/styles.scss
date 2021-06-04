@@ -12,6 +12,11 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 45px;
+
+		@media screen and (max-width: 690px) {
+			grid-template-columns: 1fr;
+			grid-row-gap: 24px;
+		}
 	}
 
 	& h1 {
@@ -31,6 +36,11 @@
 
 		& > button {
 			width: 100%;
+		}
+
+		@media screen and (max-width: 690px) {
+			grid-template-columns: 1fr;
+			grid-row-gap: 24px;
 		}
 	}
 
