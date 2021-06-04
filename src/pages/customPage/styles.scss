@@ -8,6 +8,10 @@
 		width: 100%;
 		max-width: 1600px;
 
+		@media screen and (max-width: 1632px) {
+			padding: 0 16px;
+		}
+
 		& h3 {
 			font-family: Noto Sans;
 			font-style: normal;
@@ -33,11 +37,20 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 30px;
+
+		@media screen and (max-width: 1440px) {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	&__imgs {
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+
+		@media screen and (max-width: 1440px) {
+			display: none;
+		}
 	}
 }
