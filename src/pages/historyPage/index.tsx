@@ -8,7 +8,7 @@ import globalStyles from 'resources/styles/globalStyles.scss';
 import styles from './styles.scss';
 
 const HistoryPage = () => (
-	<div>
+	<>
 		<Header />
 
 		<nav className={styles.history}>
@@ -36,7 +36,7 @@ const HistoryPage = () => (
 		<Reviews />
 
 		<Footer />
-	</div>
+	</>
 );
 
 export default HistoryPage;
