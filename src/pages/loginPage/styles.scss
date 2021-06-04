@@ -1,6 +1,13 @@
 .login {
 	margin-top: 60px;
 
+	@media screen and (max-width: 1200px) {
+		& > div {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
 	& p {
 		margin-top: 26px;
 		font-family: Noto Sans;
@@ -17,10 +24,20 @@
 		& > div	{
 			width: 100%;
 			max-width: 679px;
+
+			@media screen and (max-width: 1200px) {
+				margin-top: 32px;
+				max-width: 100%;
+			}
 		}
 
 		& > div:nth-child(2) {
 			margin-left: 136px;
+
+			@media screen and (max-width: 1200px) {
+				margin-top: 32px;
+				margin-left: 0;
+			}
 		}
 	}
 }
