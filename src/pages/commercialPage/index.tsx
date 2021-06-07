@@ -3,6 +3,7 @@ import Footer from 'library/common/components/footer';
 import Header from 'library/common/components/header';
 import Reviews from 'library/common/components/reviews';
 import React from 'react';
+import cn from 'classnames';
 import globalStyles from 'resources/styles/globalStyles.scss';
 import image58 from 'resources/images/image58.png';
 import CatalogItem from 'library/common/components/catalogItem';
@@ -13,9 +14,9 @@ const CommercialPage = () => (
 	<>
 		<Header />
 
-		<nav className={styles.commercial}>
-			<div className={styles.commercial__wrap}>
-				<div style={{maxWidth: '808px'}} className={globalStyles.title}>
+		<nav className={globalStyles.container}>
+			<div className={cn(globalStyles.wrap, styles.commercial__wrap)}>
+				<div style={{maxWidth: '809px'}} className={globalStyles.title}>
 					<h1>Commercial Reclaimed Wood Furniture</h1>
 
 					<div />

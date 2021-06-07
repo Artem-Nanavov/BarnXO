@@ -1,12 +1,8 @@
 .commercial {
-	width: 100vw;
-	display: flex;
-	justify-content: center;
-
 	&__wrap {
-		width: 100%;
-		max-width: 1600px;
-		margin-top: 60px;
+		& > img {
+			width: 100%;
+		}
 
 		& > h3 {
 			margin-top: 70px;
@@ -32,7 +28,11 @@
 
 	&__catalog {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: repeat(auto-fit, minmax(377px, 1fr));
 		grid-gap: 30px;
+
+		@media screen and (max-width: 410px) {
+			grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+		}
 	}
 }
