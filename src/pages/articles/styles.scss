@@ -20,14 +20,26 @@
 		max-width: 1193px;
 		display: grid;
 		grid-row-gap: 60px;
+
+		@media screen and (max-width: 1580px) {
+			max-width: 100%;
+		}
 	}
 
 	&__content {
 		margin-top: 66px;
-		min-width: 1600px;
+		max-width: 1600px;
 		width: 100%;
 		display: grid;
 		grid-template-columns: 1fr 298px;
+
+		@media screen and (max-width: 1580px) {
+			grid-template-columns: 1fr;
+			
+			& > div:nth-child(2) {
+				display: none;
+			}
+		}
 	}
 
 	&__stores {

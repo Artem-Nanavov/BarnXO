@@ -32,7 +32,7 @@ const Article = ({
 			<div className={styles.article__tags}>
 				{
 					tags.map((tag) => (
-						<Tag text={tag} />
+						<Tag key={Math.random()} text={tag} />
 					))
 				}
 			</div>

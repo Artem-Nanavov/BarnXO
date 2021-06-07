@@ -5,6 +5,17 @@
 	max-width: 1194px;
 	width: 100%;
 
+	@media screen and (max-width: 1580px) {
+		max-width: 100%;
+		min-height: 325px;
+		height: auto;
+	}
+
+	@media screen and (max-width: 1010px) {
+		flex-direction: column;
+		border: 1px solid #EBEBEB;
+	}
+
 	& h4, p {
 		font-family: Noto Sans;
 		font-style: normal;
@@ -14,6 +25,11 @@
 	&__img {
 		max-width: 325px;
 		height: 100%;
+
+		@media screen and (max-width: 1010px) {
+			max-width: 100%;
+			width: 100%;
+		}
 	}
 
 	&__content {
@@ -23,6 +39,10 @@
 		border: 1px solid #EBEBEB;
 		box-sizing: border-box;
 		border-left: none;
+
+		@media screen and (max-width: 1010px) {
+			border: none;
+		}
 	}
 
 	&__header {
@@ -60,5 +80,9 @@
 		flex-wrap: wrap;
 		row-gap: 10px;
 		column-gap: 15px;
+
+		@media screen and (max-width: 1580px) {
+			max-width: 100%;
+		}
 	}
 }

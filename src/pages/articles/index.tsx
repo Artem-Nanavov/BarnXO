@@ -90,6 +90,7 @@ const ArticlesPage = () => (
 								{
 									arr.slice(3).map(() => (
 										<div
+											key={Math.random()}
 											className={styles.articles__stores_item}
 											style={{backgroundImage: `url('${article.img}')`}}
 										>
