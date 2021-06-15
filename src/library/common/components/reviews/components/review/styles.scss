@@ -64,3 +64,16 @@
 		}
 	}
 }
+
+.mt {
+	margin-top: 30px;
+}
+
+.w100 {
+	max-width: 100%;
+	margin-right: 30px;
+
+	@media screen and (max-width: 830px) {
+		margin-right: 0;
+	}
+}

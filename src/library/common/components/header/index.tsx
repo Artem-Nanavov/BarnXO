@@ -1,13 +1,13 @@
 import SearchInput from 'pages/homePage/components/searchInput';
 import React from 'react';
 import cn from 'classnames';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import ArrowIcon from 'resources/icons/arrowIcon';
 import CartIcon from 'resources/icons/cartIcon';
 import LikeIcon from 'resources/icons/likeIcon';
 import LogoIcon from 'resources/images/logo.png';
-import {push} from 'connected-react-router';
-import {useDispatch} from 'react-redux';
+import { push } from 'connected-react-router';
+import { useDispatch } from 'react-redux';
 import styles from './styles.scss';
 import Button from '../ui/button';
 
@@ -69,13 +69,13 @@ const Header = () => {
 
 						<div
 							onClick={() => setIsOpenBurger(!isOpenBurger)}
-							className={cn(styles.nav__burger, {[styles.nav__burger_active]: isOpenBurger})}
+							className={cn(styles.nav__burger, { [styles.nav__burger_active]: isOpenBurger })}
 						>
 							<span />
 						</div>
 					</div>
 
-					<div className={cn(styles.nav__info, {[styles.nav__info_active]: isOpenBurger})}>
+					<div className={cn(styles.nav__info, { [styles.nav__info_active]: isOpenBurger })}>
 						<ul className={styles.nav__links}>
 							<li className={styles.nav__link}>
 								<div className={styles.nav__link_item}>
@@ -85,29 +85,29 @@ const Header = () => {
 								</div>
 
 								<div className={styles.nav__link_navigation}>
-									<div style={{maxWidth: '169px'}} className={styles.nav__link_navigation_row}>
+									<div style={{ maxWidth: '169px' }} className={styles.nav__link_navigation_row}>
 										<NavLink to="/aboutUs">
 											<p>About Us</p>
 
-											<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 										</NavLink>
 
 										<NavLink to="/history">
 											<p>History</p>
 
-											<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 										</NavLink>
 
 										<NavLink to="/ourMission">
 											<p>Our Mission</p>
 
-											<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 										</NavLink>
 
 										<NavLink to="/articles">
 											<p>Blog</p>
 
-											<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 										</NavLink>
 									</div>
 								</div>
@@ -121,11 +121,11 @@ const Header = () => {
 								</div>
 
 								<div className={styles.nav__link_navigation}>
-									<div style={{maxWidth: '261px'}} className={styles.nav__link_navigation_row}>
-										<NavLink to="/googleReviews">
+									<div style={{ maxWidth: '261px' }} className={styles.nav__link_navigation_row}>
+										<NavLink to="/reviews">
 											<p>Leave a Google Review</p>
 
-											<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 										</NavLink>
 									</div>
 								</div>
@@ -138,8 +138,8 @@ const Header = () => {
 									<ArrowIcon />
 								</div>
 
-								<div style={{left: 0}} className={styles.nav__link_navigation}>
-									<div style={{maxWidth: '1600px'}} className={styles.showWrap}>
+								<div style={{ left: 0 }} className={styles.nav__link_navigation}>
+									<div style={{ maxWidth: '1600px' }} className={styles.showWrap}>
 										<div className={styles.showWrap__row}>
 											<h3>HOME FURNITURE</h3>
 
@@ -147,31 +147,31 @@ const Header = () => {
 												<NavLink to="/googleReviews">
 													<p>Coffee Tables</p>
 
-													<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+													<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 												</NavLink>
 
 												<NavLink to="/googleReviews">
 													<p>Dining Tables</p>
 
-													<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+													<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 												</NavLink>
 
 												<NavLink to="/googleReviews">
 													<p>Entertainment Centers</p>
 
-													<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+													<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 												</NavLink>
 
 												<NavLink to="/googleReviews">
 													<p>Entry Sofa,  Console Tables</p>
 
-													<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+													<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 												</NavLink>
 
 												<NavLink to="/googleReviews">
 													<p>Shelving, Organization</p>
 
-													<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+													<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 												</NavLink>
 											</div>
 										</div>
@@ -183,13 +183,13 @@ const Header = () => {
 												<NavLink to="/googleReviews">
 													<p>Conference Tables</p>
 
-													<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+													<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 												</NavLink>
 
 												<NavLink to="/googleReviews">
 													<p>Executive, Computer Tables</p>
 
-													<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+													<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 												</NavLink>
 											</div>
 										</div>
@@ -201,19 +201,19 @@ const Header = () => {
 												<NavLink to="/googleReviews">
 													<p>Barstools, Stools</p>
 
-													<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+													<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 												</NavLink>
 
 												<NavLink to="/googleReviews">
 													<p>Benches</p>
 
-													<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+													<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 												</NavLink>
 
 												<NavLink to="/googleReviews">
 													<p>Chairs</p>
 
-													<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+													<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 												</NavLink>
 											</div>
 										</div>
@@ -225,19 +225,19 @@ const Header = () => {
 												<NavLink to="/googleReviews">
 													<p>Reclaimed Accent Walls</p>
 
-													<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+													<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 												</NavLink>
 
 												<NavLink to="/googleReviews">
 													<p>Reclaimed Wood Flooring</p>
 
-													<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+													<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 												</NavLink>
 
 												<NavLink to="/googleReviews">
 													<p>Table Legs</p>
 
-													<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+													<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 												</NavLink>
 											</div>
 										</div>
@@ -259,23 +259,23 @@ const Header = () => {
 								</div>
 
 								<div className={styles.nav__link_navigation}>
-									<div style={{maxWidth: '295px'}} className={styles.nav__link_navigation_row}>
+									<div style={{ maxWidth: '295px' }} className={styles.nav__link_navigation_row}>
 										<NavLink to="/wood">
 											<p>Reclaimed Wood</p>
 
-											<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 										</NavLink>
 
 										<NavLink to="/kiln">
 											<p>Kiln Dried Reclaimed Wood</p>
 
-											<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 										</NavLink>
 
 										<NavLink to="/finishes">
 											<p>Finishes</p>
 
-											<ArrowIcon width="10px" height="5px" style={{transform: 'rotate(-90deg)'}} />
+											<ArrowIcon width="10px" height="5px" style={{ transform: 'rotate(-90deg)' }} />
 										</NavLink>
 									</div>
 								</div>
@@ -292,7 +292,7 @@ const Header = () => {
 							color="none"
 							size="small"
 							text="Log in"
-							style={{width: '164px'}}
+							style={{ width: '164px' }}
 							onClick={navigateToLogin}
 						/>
 

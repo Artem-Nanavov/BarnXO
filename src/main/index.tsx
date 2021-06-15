@@ -1,7 +1,5 @@
 import * as React from 'react';
 import {render} from 'react-dom';
-import 'resources/styles/nullstyle.css';
-
 import {ConnectedRouter, routerMiddleware} from 'connected-react-router';
 import createHistory from 'history/createBrowserHistory';
 import {Provider} from 'react-redux';
@@ -10,9 +8,12 @@ import {batchDispatchMiddleware, enableBatching} from 'redux-batched-actions';
 import {composeWithDevTools} from 'redux-devtools-extension';
 import createSagaMiddleware from 'redux-saga';
 import {StateType} from 'typesafe-actions';
+import BreakpointsProvider from 'library/common/providers/BreakpointsProvider';
 import Routes from './Routes';
 import createRootReducer from './rootReducer';
 import rootSaga from './rootSaga';
+
+import 'resources/styles/nullstyle.css';
 
 export const history = createHistory();
 
@@ -41,7 +42,9 @@ sagaMiddleware.run(rootSaga as any);
 render(
 	<Provider store={store}>
 		<ConnectedRouter history={history}>
-			<Routes />
+			<BreakpointsProvider>
+				<Routes />
+			</BreakpointsProvider>
 		</ConnectedRouter>
 	</Provider>,
 	document.getElementById('app'),

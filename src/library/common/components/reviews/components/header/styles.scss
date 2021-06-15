@@ -53,20 +53,14 @@
 .blackBtn {
 	background: #262623;
 	border: 1px solid #262623;
-	
+
 	& p {
-		color: #FFFFFF;
+		color: #FFF;
 	}
 }
 
 code {
 	font-weight: 600;
-}
-
-@media screen and (max-width: 1632px) {
-	.header {
-		margin: 0 16px;
-	}
 }
 
 @media screen and (max-width: 950px) {
