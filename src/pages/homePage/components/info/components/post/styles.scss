@@ -9,6 +9,10 @@
 		left: 54px;
 		top: 494px;
 		max-width: 376px;
+
+		@media screen and (max-width: 420px) {
+			padding: 0 4px;
+		}
 	}
 
 	&__title {

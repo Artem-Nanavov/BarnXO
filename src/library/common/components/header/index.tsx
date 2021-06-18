@@ -7,11 +7,35 @@ import CartIcon from 'resources/icons/cartIcon';
 import LikeIcon from 'resources/icons/likeIcon';
 import LogoIcon from 'resources/images/logo.png';
 import { push } from 'connected-react-router';
+import { useBreakpoints } from 'library/common/providers/BreakpointsProvider';
 import { useDispatch } from 'react-redux';
 import styles from './styles.scss';
 import Button from '../ui/button';
+import Select from '../ui/select';
+
+const selectOptions = [
+	{
+		key: 'asdfasdf',
+		value: 'Commercial',
+		link: '/commercial',
+	},
+	{
+		key: 'asdfa234trefsdf',
+		value: 'Showroom',
+		link: '/showroom',
+	},
+	{
+		key: 'asdfa2354tgwrefsdf',
+		value: 'Contact us',
+		link: '/aboutUs',
+	},
+];
 
 const Header = () => {
+	const { isDown } = useBreakpoints();
+
+	const isChangeLoginColor = isDown(451);
+
 	const [isOpenBurger, setIsOpenBurger] = React.useState(false);
 
 	React.useEffect(() => {
@@ -27,6 +51,13 @@ const Header = () => {
 	const navigateToReg = React.useCallback(() => {
 		dispatch(push('/reg'));
 	}, [dispatch]);
+
+	const navigateTo = React.useCallback(
+		(link: string) => {
+			dispatch(push(link));
+		},
+		[dispatch],
+	);
 
 	return (
 		<header className={styles.wrap}>
@@ -48,6 +79,14 @@ const Header = () => {
 						</li>
 					</ul>
 
+					<div className={styles.header__select}>
+						<Select
+							value={selectOptions[0]}
+							values={selectOptions}
+							onClick={(value) => navigateTo(value['link' as any])}
+						/>
+					</div>
+
 					<div className={styles.header__options}>
 						<LikeIcon />
 
@@ -65,7 +104,7 @@ const Header = () => {
 			<nav className={styles.nav}>
 				<div className={styles.content}>
 					<div className={styles.content__logo}>
-						<img src={LogoIcon} alt="" />
+						<img onClick={navigateToLogin} src={LogoIcon} alt="" />
 
 						<div
 							onClick={() => setIsOpenBurger(!isOpenBurger)}
@@ -289,7 +328,7 @@ const Header = () => {
 
 					<div className={styles.nav__authBtns}>
 						<Button
-							color="none"
+							color={isChangeLoginColor ? 'outlined' : 'none'}
 							size="small"
 							text="Log in"
 							style={{ width: '164px' }}

@@ -1,9 +1,8 @@
-import {connect} from 'react-redux';
-import {withRouter} from 'react-router-dom';
-import {RootState} from 'main';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import ProductPage from '../index';
 
-const mapStateToProps = (state: RootState) => ({
+const mapStateToProps = () => ({
 	price: 1581.36,
 	rating: 4.5,
 	title: 'Bar Height U-Shape Dining Table',

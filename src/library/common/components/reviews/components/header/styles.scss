@@ -11,8 +11,16 @@
 	align-items: center;
 	justify-content: space-between;
 
+	@media screen and (max-width: 1632px) {
+		padding: 0 16px;
+	}
+
 	&__select {
 		display: none;
+
+		@media screen and (max-width: 490px) {
+			width: 100%;
+		}
 	}
 
 	&__choose {
@@ -47,6 +55,10 @@
 		display: flex;
 		align-items: center;
 		position: relative;
+
+		@media screen and (max-width: 490px) {
+			display: none;
+		}
 	}
 }
 

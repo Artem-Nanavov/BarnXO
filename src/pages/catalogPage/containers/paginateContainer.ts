@@ -1,8 +1,7 @@
-import {connect} from 'react-redux';
-import {RootState} from 'main';
+import { connect } from 'react-redux';
 import Paginate from '../components/paginate';
 
-const mapStateToProps = (state: RootState) => ({
+const mapStateToProps = () => ({
 	pageCount: 20,
 });
 

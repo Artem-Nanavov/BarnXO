@@ -5,6 +5,23 @@
 	border: 1px solid #EBEBEB;
 	box-sizing: border-box;
 
+	&__date {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		
+		.date {
+			&__date {
+				font-family: Noto Sans;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 16px;
+				line-height: 24px;
+				color: #666666;
+			}
+		}
+	}
+
 	&__header {
 		width: 100%;
 		display: flex;
@@ -46,22 +63,7 @@
 	&__rating {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
-
-		& > div {
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-			grid-column-gap: 2.75px;
-		}
-
-		& > p {
-			font-family: Noto Sans;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 16px;
-			line-height: 24px;
-			color: #666666;
-		}
+		column-gap: 2.75px;
 	}
 }
 

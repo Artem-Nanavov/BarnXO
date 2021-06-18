@@ -2,7 +2,7 @@ import Checkbox from 'library/common/components/ui/checkbox';
 import React from 'react';
 import ArrowIcon from 'resources/icons/arrowIcon';
 import Slider from 'rc-slider';
-import {IChild, IFilters, IParent} from 'types/catalog';
+import { IChild, IFilters, IParent } from 'types/catalog';
 import cn from 'classnames';
 import Input from 'pages/customPage/components/input';
 import 'rc-slider/assets/index.css';
@@ -23,10 +23,10 @@ const Filters = ({
 	minCost,
 	setFiltersValue,
 }: IFiltersComponent) => {
-	const [isShowHome, setIsShowHome] = React.useState(true);
-	const [isShowOffice, setIsShowOffice] = React.useState(true);
-	const [isShowWood, setIsShowWood] = React.useState(true);
-	const [isShowDYI, setIsShowDYI] = React.useState(true);
+	// const [isShowHome, setIsShowHome] = React.useState(true);
+	// const [isShowOffice, setIsShowOffice] = React.useState(true);
+	// const [isShowWood, setIsShowWood] = React.useState(true);
+	// const [isShowDYI, setIsShowDYI] = React.useState(true);
 	const [cost, setCost] = React.useState([minCost, maxCost]);
 	const [minValueOfCost, setMinValueOfCost] = React.useState('0');
 
@@ -97,7 +97,7 @@ const Filters = ({
 								)}
 							>
 								<Checkbox
-									onChange={() => {}}
+									onChange={() => { }}
 									text={child.text}
 									checked={child.isSelected}
 								/>
@@ -126,7 +126,7 @@ const Filters = ({
 								)}
 							>
 								<Checkbox
-									onChange={() => {}}
+									onChange={() => { }}
 									text={child.text}
 									checked={child.isSelected}
 								/>
@@ -155,7 +155,7 @@ const Filters = ({
 								)}
 							>
 								<Checkbox
-									onChange={() => {}}
+									onChange={() => { }}
 									text={child.text}
 									checked={child.isSelected}
 								/>
@@ -184,7 +184,7 @@ const Filters = ({
 								)}
 							>
 								<Checkbox
-									onChange={() => {}}
+									onChange={() => { }}
 									text={child.text}
 									checked={child.isSelected}
 								/>
@@ -194,7 +194,7 @@ const Filters = ({
 				</ul>
 			</div>
 
-			<div className={cn(styles.filters__block, styles.grid)} style={{paddingRight: 30}}>
+			<div className={cn(styles.filters__block, styles.grid)} style={{ paddingRight: 30 }}>
 				<div className={styles.filters__block_header}>
 					<p>Cost</p>
 

@@ -2,7 +2,7 @@
 import React from 'react';
 import Ellipse20 from 'resources/images/Ellipse20.png';
 // @ts-ignore
-import Carousel, {slidesToShowPlugin} from '@brainhubeu/react-carousel';
+import Carousel, { slidesToShowPlugin } from '@brainhubeu/react-carousel';
 import Header from './components/header';
 import Review from './components/review';
 import styles from './styles.scss';
@@ -40,6 +40,7 @@ const breakpoints = {
 	},
 	780: {
 		plugins: [
+			'centered',
 			{
 				resolve: slidesToShowPlugin,
 				options: {

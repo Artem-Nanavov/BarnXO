@@ -31,22 +31,22 @@ const Review = ({
 				<p>{username}</p>
 
 				<div className={styles.review__rating}>
-					<div>
-						<StarIcon />
-						<StarIcon />
-						<StarIcon />
-						<StarIcon />
-						<StarIcon />
-					</div>
-
-					<p>{date}</p>
+					<StarIcon />
+					<StarIcon />
+					<StarIcon />
+					<StarIcon />
+					<StarIcon />
 				</div>
 			</div>
 		</div>
 
 		<p className={styles.review__description} style={{ marginTop: '20px' }}>{description}</p>
 
-		<p className={styles.review__postedOn} style={{ marginTop: '10px' }}>Posted on</p>
+		<div className={styles.review__date}>
+			<p className={styles.review__postedOn}>Posted on</p>
+
+			<p className={styles.date__date}>{date}</p>
+		</div>
 
 		<img style={{ marginTop: '30px' }} src={googleIcon} alt="" />
 	</div>

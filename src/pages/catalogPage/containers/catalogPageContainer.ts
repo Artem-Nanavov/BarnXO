@@ -1,9 +1,8 @@
-import {connect} from 'react-redux';
-import {withRouter} from 'react-router-dom';
-import {RootState} from 'main';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import CatalogPage from '../index';
 
-const mapStateToProps = (state: RootState) => ({});
+const mapStateToProps = () => ({});
 
 const mapDispatchToProps = {};
 

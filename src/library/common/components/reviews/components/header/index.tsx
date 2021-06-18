@@ -47,7 +47,7 @@ const Header = ({
 						type="button"
 						className={cn(styles.header__btn, styles.blackBtn)}
 					>
-						<p style={{marginLeft: 0}}>All Reviews 4.8</p>
+						<p style={{ marginLeft: 0 }}>All Reviews 4.8</p>
 					</button>
 
 					<button
@@ -83,7 +83,7 @@ const Header = ({
 						value={reviews}
 						values={reviewsSelectValues}
 						placeholder="Reviews"
-						setValue={setReviews}
+						onClick={setReviews}
 					/>
 				</div>
 

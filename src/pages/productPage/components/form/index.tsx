@@ -78,7 +78,7 @@ const Form = ({
 						<h3>Dimensions</h3>
 
 						<Select
-							setValue={setDimensions}
+							onClick={setDimensions}
 							value={dimensions}
 							placeholder=""
 							values={valuesOfSelect}
@@ -89,7 +89,7 @@ const Form = ({
 						<h3>THICKNESS</h3>
 
 						<Select
-							setValue={setThickness}
+							onClick={setThickness}
 							value={thickness}
 							placeholder=""
 							values={valuesOfSelect2}
@@ -119,7 +119,7 @@ const Form = ({
 					<h3>Metal finish</h3>
 
 					<Select
-						setValue={setDimensions}
+						onClick={setDimensions}
 						value={dimensions}
 						placeholder=""
 						values={valuesOfSelect}
@@ -139,7 +139,7 @@ const Form = ({
 
 						<Button
 							text="ADD TO CARD"
-							onClick={() => {}}
+							onClick={() => { }}
 						/>
 					</div>
 

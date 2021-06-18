@@ -10,23 +10,23 @@ interface ISelectValue {
 }
 
 interface ISelect {
-	placeholder: string;
+	placeholder?: string;
 	value?: ISelectValue;
 	values: ISelectValue[];
-	setValue: (value: ISelectValue) => void;
+	onClick: (value: ISelectValue) => void;
 }
 
 const Select = ({
 	placeholder,
 	value,
 	values,
-	setValue,
+	onClick,
 }: ISelect) => {
 	const [showSelect, setShowSelect] = React.useState(false);
 	const selectRef = React.useRef(null);
 
 	const selectValueHandler = (_value: ISelectValue) => {
-		setValue(_value);
+		onClick(_value);
 		setShowSelect(false);
 	};
 
