@@ -1,3 +1,6 @@
+/* eslint-disable react/jsx-no-duplicate-props */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable max-len */
 import Footer from 'library/common/components/footer';
 import Header from 'library/common/components/header';
@@ -7,12 +10,15 @@ import cn from 'classnames';
 import globalStyles from 'resources/styles/globalStyles.scss';
 import image85 from 'resources/images/image85.png';
 import image87 from 'resources/images/image87.png';
+import { useBreakpoints } from 'library/common/providers/BreakpointsProvider';
+import Carousel, { Dots } from '@brainhubeu/react-carousel';
 // @ts-ignore
 import StarRatings from 'react-star-ratings';
 import Tag from 'library/common/components/tag';
-import Carousel from './components/carousel';
+import CustomCarousel from './components/carousel';
 import styles from './styles.scss';
 import Form from './components/form';
+// import '@brainhubeu/react-carousel/lib/style.css';
 
 const imgs = [image85, image87, image87];
 
@@ -24,6 +30,47 @@ interface IProduct {
 	price: string | number;
 }
 
+class MyCarousel extends React.Component {
+	constructor() {
+		// @ts-ignore
+		super();
+		this.state = {
+			value: 0,
+			slides: [
+				(<img src={image85} />),
+				(<img src={image87} />),
+				(<img src={image87} />),
+			],
+			thumbnails: [
+				(<img className={styles.im} src={image85} />),
+				(<img className={styles.im} src={image87} />),
+				(<img className={styles.im} src={image87} />),
+			],
+		};
+		this.onchange = this.onchange.bind(this);
+	}
+
+	onchange(value: any) {
+		this.setState({ value });
+	}
+
+	render() {
+		return (
+			<div>
+				<Carousel
+					// @ts-ignore
+					value={this.state.value}
+					// @ts-ignore
+					slides={this.state.slides}
+					onChange={this.onchange}
+				/>
+				{/* @ts-ignore */}
+				<Dots number={this.state.thumbnails.length} thumbnails={this.state.thumbnails} value={this.state.value} onChange={this.onchange} number={this.state.slides.length} />
+			</div>
+		);
+	}
+}
+
 const ProductPage = ({
 	rating,
 	title,
@@ -31,7 +78,15 @@ const ProductPage = ({
 	tags,
 	price,
 }: IProduct) => {
-	console.log();
+	const { isDown } = useBreakpoints();
+
+	const isChangeCarousel = isDown(1501);
+
+	const [value, setValue] = React.useState(0);
+
+	const onChange = (_value: any) => {
+		setValue(_value);
+	};
 
 	return (
 		<>
@@ -39,11 +94,45 @@ const ProductPage = ({
 
 			<nav className={globalStyles.container}>
 				<div className={cn(globalStyles.wrap, styles.product)}>
-					<div>
-						<Carousel
-							imgs={imgs}
-							_currentImg={image85}
-						/>
+					<div style={{ maxWidth: '100vw' }}>
+						<MyCarousel />
+						{/* <Carousel
+							value={value}
+							onChange={onChange}
+						>
+							<img className="img-example" src={image85} alt="" />
+							<img className="img-example" src={image87} alt="" />
+							<img className="img-example" src={image87} alt="" />
+
+							<Dots
+								value={value}
+								onChange={onChange}
+								thumbnails={[
+									<img key={1} className="img-example-small" src={image85} alt="" />,
+									<img key={2} className="img-example-small" src={image87} alt="" />,
+									<img key={3} className="img-example-small" src={image87} alt="" />,
+									// (<img key={1} className="img-example-small" src={abstractImage} />),
+									// ...(<img key={12} className="img-example-small" src={transportImage} />),
+								]}
+							/>
+						</Carousel> */}
+						{/* {
+							isChangeCarousel ? (
+								<Carousel
+									value={value}
+									onChange={onChange}
+								>
+									<img src={image85} alt="" />
+									<img src={image87} alt="" />
+									<img src={image87} alt="" />
+								</Carousel>
+							) : (
+								<CustomCarousel
+									imgs={imgs}
+									_currentImg={image85}
+								/>
+							)
+						} */}
 					</div>
 
 					<div className={styles.product__info}>

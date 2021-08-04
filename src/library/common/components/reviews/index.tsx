@@ -79,7 +79,7 @@ const Reviews = () => {
 						value={value}
 						plugins={plugins}
 						onChange={change}
-						breakpoints={breakpoints}
+						// breakpoints={breakpoints}
 					>
 						{
 							reviews.map(() => (

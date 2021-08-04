@@ -14,6 +14,7 @@ import createRootReducer from './rootReducer';
 import rootSaga from './rootSaga';
 
 import 'resources/styles/nullstyle.css';
+import './index.scss';
 
 export const history = createHistory();
 

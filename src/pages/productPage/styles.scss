@@ -4,6 +4,11 @@
 	grid-template-columns: 1fr 1fr;
 	grid-column-gap: 30px;
 
+	@media screen and (max-width: 1500px) {
+		grid-template-columns: 1fr;
+		grid-row-gap: 64px;
+	}
+
 	& h1, & h2 {
 		font-family: Playfair Display SC;
 		font-style: normal;
@@ -60,4 +65,9 @@
 	&__text {
 		margin-top: 30px;
 	}
+}
+
+.im {
+	max-width: 240px !important;
+	max-height: 160px !important;
 }
