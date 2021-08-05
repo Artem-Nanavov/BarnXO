@@ -16,9 +16,9 @@ const CatalogItems = ({
 				<CatalogItem
 					key={Math.random()}
 					description={item.description}
-					img={item.img}
+					image={item.image}
 					price={item.price}
-					title={item.title}
+					title={item.name}
 				/>
 			))
 		}

@@ -16,7 +16,7 @@ const CommercialPage = () => (
 
 		<nav className={globalStyles.container}>
 			<div className={cn(globalStyles.wrap, styles.commercial__wrap)}>
-				<div style={{maxWidth: '809px'}} className={globalStyles.title}>
+				<div style={{ maxWidth: '809px' }} className={globalStyles.title}>
 					<h1>Commercial Reclaimed Wood Furniture</h1>
 
 					<div />
@@ -30,7 +30,7 @@ const CommercialPage = () => (
 					We have built many pieces for commercial spaces and can help you fill a space of any size. If you have your own design in mind, we can help with that too! Simply fill out the form below and we will get back with you right away to discuss your project.
 				</p>
 
-				<div style={{maxWidth: '616px', marginTop: '90px'}} className={globalStyles.title}>
+				<div style={{ maxWidth: '616px', marginTop: '90px' }} className={globalStyles.title}>
 					<h1>BUY NOW — Trending Furniture</h1>
 
 					<div />
@@ -38,56 +38,56 @@ const CommercialPage = () => (
 
 				<div className={styles.commercial__catalog}>
 					<CatalogItem
-						img={Rectangle144}
+						image={Rectangle144}
 						title="Тут будет название товара в 2 строки"
 						description="This Coffee Table with U-Shaped Leg Base is HANDMADE in the USA. It's an ideal..."
 						price="230.00"
 					/>
 
 					<CatalogItem
-						img={Rectangle144}
+						image={Rectangle144}
 						title="Тут будет название товара в 2 строки"
 						description="This Coffee Table with U-Shaped Leg Base is HANDMADE in the USA. It's an ideal..."
 						price="230.00"
 					/>
 
 					<CatalogItem
-						img={Rectangle144}
+						image={Rectangle144}
 						title="Тут будет название товара в 2 строки"
 						description="This Coffee Table with U-Shaped Leg Base is HANDMADE in the USA. It's an ideal..."
 						price="230.00"
 					/>
 
 					<CatalogItem
-						img={Rectangle144}
+						image={Rectangle144}
 						title="Тут будет название товара в 2 строки"
 						description="This Coffee Table with U-Shaped Leg Base is HANDMADE in the USA. It's an ideal..."
 						price="230.00"
 					/>
 
 					<CatalogItem
-						img={Rectangle144}
+						image={Rectangle144}
 						title="Тут будет название товара в 2 строки"
 						description="This Coffee Table with U-Shaped Leg Base is HANDMADE in the USA. It's an ideal..."
 						price="230.00"
 					/>
 
 					<CatalogItem
-						img={Rectangle144}
+						image={Rectangle144}
 						title="Тут будет название товара в 2 строки"
 						description="This Coffee Table with U-Shaped Leg Base is HANDMADE in the USA. It's an ideal..."
 						price="230.00"
 					/>
 
 					<CatalogItem
-						img={Rectangle144}
+						image={Rectangle144}
 						title="Тут будет название товара в 2 строки"
 						description="This Coffee Table with U-Shaped Leg Base is HANDMADE in the USA. It's an ideal..."
 						price="230.00"
 					/>
 
 					<CatalogItem
-						img={Rectangle144}
+						image={Rectangle144}
 						title="Тут будет название товара в 2 строки"
 						description="This Coffee Table with U-Shaped Leg Base is HANDMADE in the USA. It's an ideal..."
 						price="230.00"

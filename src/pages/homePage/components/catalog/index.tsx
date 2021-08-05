@@ -6,8 +6,8 @@ import CatalogItem from '../../../../library/common/components/catalogItem';
 import styles from './styles.scss';
 
 const Catalog = () => (
-	<div style={{marginTop: '200px', width: '100vw'}}>
-		<div style={{maxWidth: '615px'}} className={globalStyles.title}>
+	<div style={{ marginTop: '200px', width: '100vw' }}>
+		<div style={{ maxWidth: '615px' }} className={globalStyles.title}>
 			<h1>BUY NOW — Trending Furniture</h1>
 
 			<div />
@@ -15,56 +15,56 @@ const Catalog = () => (
 
 		<div className={styles.catalog}>
 			<CatalogItem
-				img={Rectangle144}
+				image={Rectangle144}
 				title="Тут будет название товара в 2 строки"
 				description="This Coffee Table with U-Shaped Leg Base is HANDMADE in the USA. It's an ideal..."
 				price="230.00"
 			/>
 
 			<CatalogItem
-				img={Rectangle144}
+				image={Rectangle144}
 				title="Тут будет название товара в 2 строки"
 				description="This Coffee Table with U-Shaped Leg Base is HANDMADE in the USA. It's an ideal..."
 				price="230.00"
 			/>
 
 			<CatalogItem
-				img={Rectangle144}
+				image={Rectangle144}
 				title="Тут будет название товара в 2 строки"
 				description="This Coffee Table with U-Shaped Leg Base is HANDMADE in the USA. It's an ideal..."
 				price="230.00"
 			/>
 
 			<CatalogItem
-				img={Rectangle144}
+				image={Rectangle144}
 				title="Тут будет название товара в 2 строки"
 				description="This Coffee Table with U-Shaped Leg Base is HANDMADE in the USA. It's an ideal..."
 				price="230.00"
 			/>
 
 			<CatalogItem
-				img={Rectangle144}
+				image={Rectangle144}
 				title="Тут будет название товара в 2 строки"
 				description="This Coffee Table with U-Shaped Leg Base is HANDMADE in the USA. It's an ideal..."
 				price="230.00"
 			/>
 
 			<CatalogItem
-				img={Rectangle144}
+				image={Rectangle144}
 				title="Тут будет название товара в 2 строки"
 				description="This Coffee Table with U-Shaped Leg Base is HANDMADE in the USA. It's an ideal..."
 				price="230.00"
 			/>
 
 			<CatalogItem
-				img={Rectangle144}
+				image={Rectangle144}
 				title="Тут будет название товара в 2 строки"
 				description="This Coffee Table with U-Shaped Leg Base is HANDMADE in the USA. It's an ideal..."
 				price="230.00"
 			/>
 
 			<CatalogItem
-				img={Rectangle144}
+				image={Rectangle144}
 				title="Тут будет название товара в 2 строки"
 				description="This Coffee Table with U-Shaped Leg Base is HANDMADE in the USA. It's an ideal..."
 				price="230.00"
@@ -73,9 +73,9 @@ const Catalog = () => (
 
 		<div className={globalStyles.center}>
 			<Button
-				style={{marginTop: '60px', width: '300px'}}
+				style={{ marginTop: '60px', width: '300px' }}
 				text="See catalog"
-				onClick={() => {}}
+				onClick={() => { }}
 			/>
 		</div>
 	</div>

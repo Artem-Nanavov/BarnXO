@@ -3,6 +3,7 @@ import Header from 'library/common/components/header';
 import React from 'react';
 import globalStyles from 'resources/styles/globalStyles.scss';
 import cn from 'classnames';
+import serverFetch from 'library/utils/server';
 import CatalogHeader from './components/catalogHeader';
 import ResetFilters from './containers/resetFiltersContainer';
 import Filters from './containers/filtersContainer';
@@ -10,8 +11,12 @@ import styles from './styles.scss';
 import CatalogItems from './containers/catalogItemsContainer';
 import Paginate from './containers/paginateContainer';
 
-const CatalogPage = () => {
-	console.log();
+const CatalogPage = ({ setCatalogItemsValue, setFiltersValue }: any) => {
+	React.useEffect(() => {
+		serverFetch.get('/products', { headers: { 'X-Oc-Image-Dimension': '347x273' } })
+			.then((data) => setCatalogItemsValue({ items: data.data.data }));
+		serverFetch.get('/categories').then((data) => setFiltersValue(data.data.data));
+	}, []);
 
 	return (
 		<>

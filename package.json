@@ -16,6 +16,7 @@
   "dependencies": {
     "@brainhubeu/react-carousel": "^2.0.4",
     "@react-hook/window-size": "^3.0.7",
+    "axios": "^0.21.1",
     "classnames": "^2.3.1",
     "clean-webpack-plugin": "1.0.0",
     "connected-react-router": "6.0.0",
@@ -28,6 +29,7 @@
     "file-saver": "^2.0.5",
     "friendly-errors-webpack-plugin": "1.7.0",
     "history": "4.7.2",
+    "html-react-parser": "^1.2.7",
     "html-webpack-plugin": "4.2.0",
     "http-proxy-middleware": "^1.0.6",
     "identity-obj-proxy": "^3.0.0",

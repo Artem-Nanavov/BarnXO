@@ -1,26 +1,27 @@
 import React from 'react';
+import parse from 'html-react-parser';
 import { ICatalogItem } from 'types/catalog';
 import Button from '../ui/button';
 import Favorite from '../ui/favorite';
 import styles from './styles.scss';
 
 const CatalogItem = ({
-	img,
-	title,
+	image,
+	title: name,
 	description,
 	price,
 }: ICatalogItem) => (
 	<div className={styles.item}>
 		<div className={styles.item__img}>
-			<img src={img} alt="" />
+			<img src={image} alt="" />
 		</div>
 
-		<div style={{padding: '0 17.5px'}}>
-			<h2 className={styles.item__title}>{title}</h2>
+		<div style={{ padding: '0 17.5px' }}>
+			<h2 className={styles.item__title}>{name}</h2>
 
-			<p className={styles.item__description}>
-				{description}
-			</p>
+			<div className={styles.item__description}>
+				{parse(description)}
+			</div>
 
 			<p className={styles.item__price}>
 				$
@@ -29,10 +30,10 @@ const CatalogItem = ({
 		</div>
 
 		<div className={styles.item__actions}>
-			<Favorite onClick={() => {}} />
+			<Favorite onClick={() => { }} />
 
 			<Button
-				onClick={() => {}}
+				onClick={() => { }}
 				text="add to cart"
 			/>
 		</div>

@@ -2,7 +2,7 @@ import React from 'react';
 import CloseIcon from 'resources/icons/close';
 import { IChild, IFilters, IParent } from 'types/catalog';
 import styles from './styles.scss';
-import {initialState as defaultFilters} from '../../reducer';
+import { initialState as defaultFilters } from '../../reducer';
 
 interface IResetFilters {
 	filters: IFilters;
@@ -13,12 +13,12 @@ const ResetFilters = ({
 	filters,
 	setFiltersValue,
 }: IResetFilters) => {
-	const appliedFilters = [
-		...Object.values(filters.home),
-		...Object.values(filters.office),
-		...Object.values(filters.wood),
-		...Object.values(filters.DYI),
-	].filter((filter) => filter.isSelected === true);
+	// const appliedFilters = [
+	// 	...Object.values(filters.home),
+	// 	...Object.values(filters.office),
+	// 	...Object.values(filters.wood),
+	// 	...Object.values(filters.DYI),
+	// ].filter((filter) => filter.isSelected === true);
 
 	const deleteFilter = React.useCallback((parent: IParent, child: IChild, value: boolean) => {
 		setFiltersValue({
@@ -36,17 +36,17 @@ const ResetFilters = ({
 	const deleteAllFilters = React.useCallback(() => {
 		setFiltersValue({
 			...filters,
-			home: defaultFilters.filters.home,
-			office: defaultFilters.filters.office,
-			wood: defaultFilters.filters.wood,
-			DYI: defaultFilters.filters.DYI,
+			// home: defaultFilters.filters.home,
+			// office: defaultFilters.filters.office,
+			// wood: defaultFilters.filters.wood,
+			// DYI: defaultFilters.filters.DYI,
 		});
 	}, []);
 
 	return (
 		<div className={styles.resetFilters}>
 			<div className={styles.resetFilters__filters}>
-				{
+				{/* {
 					appliedFilters.map((filter) => (
 						<div key={Math.random()} className={styles.resetFilters__item}>
 							<p>{filter.text}</p>
@@ -59,10 +59,10 @@ const ResetFilters = ({
 							</button>
 						</div>
 					))
-				}
+				} */}
 			</div>
 
-			{
+			{/* {
 				appliedFilters.length > 0 && (
 					<button
 						className={styles.resetFilters__resetAll}
@@ -72,7 +72,7 @@ const ResetFilters = ({
 						Reset filter
 					</button>
 				)
-			}
+			} */}
 		</div>
 	);
 };

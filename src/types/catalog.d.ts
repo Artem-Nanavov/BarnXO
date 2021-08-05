@@ -20,39 +20,14 @@ export type IChild = 'coffe'
 	| 'wood'
 	| 'legs';
 
-export interface IFilters {
-	home: {
-		coffe: IChildItem;
-		dining: IChildItem;
-		entertainment: IChildItem;
-		entry: IChildItem;
-		shelving: IChildItem;
-	};
-	office: {
-		conference: IChildItem;
-		executive: IChildItem;
-	};
-	wood: {
-		barstools: IChildItem;
-		benches: IChildItem;
-		chairs: IChildItem;
-	};
-	DYI: {
-		walls: IChildItem;
-		wood: IChildItem;
-		legs: IChildItem;
-	};
-	cost: {
-		minValue: number;
-		maxValue: number;
-	};
-}
+export type IFilters = any;
 
 export interface ICatalogItem {
-	img: any;
+	image: any;
 	title: string;
 	description: string;
 	price: string;
+	name?: any;
 }
 
 export type PricePageState = {
