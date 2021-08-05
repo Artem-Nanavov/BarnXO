@@ -6,7 +6,11 @@ import * as actions from './actions';
 
 export const initialState: PricePageState = {
 	catalogItems: [],
-	filters: []
+	filters: [],
+	searchPhrase: '',
+	sort: '',
+	page: 1, 
+	order: '',
 };
 
 export type PricePageActions = ActionType<typeof actions>;
@@ -24,7 +28,7 @@ export default (
 	case getType(actions.setCatalogItemsValue):
 		return {
 			...state,
-			catalogItems: action.items.items,
+			catalogItems: action.items,
 		};
 	case getType(actions.setSubFilters):
 		return {

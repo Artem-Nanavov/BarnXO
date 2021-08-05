@@ -1,7 +1,7 @@
 import {connect} from 'react-redux';
 import {RootState} from 'main';
 import Filters from '../components/filters';
-import {setFiltersValue, setSubFilters} from '../actions';
+import {setFiltersValue, setSubFilters, setCatalogItemsValue} from '../actions';
 
 const mapStateToProps = (state: RootState) => ({
 	filters: state.catalog.filters,
@@ -12,6 +12,7 @@ const mapStateToProps = (state: RootState) => ({
 const mapDispatchToProps = {
 	setFiltersValue,
 	setSubFilters,
+	setCatalogItemsValue,
 };
 
 export default connect(

@@ -6,70 +6,46 @@ import styles from './styles.scss';
 const popularSelect = [
 	{
 		key: 'asfhglkafg',
-		value: 'Popular',
+		value: 'model',
 	},
 	{
 		key: 'asdf234ra',
-		value: 'Popular',
+		value: 'quantity',
 	},
 	{
 		key: '23qty4wu65jht4gr',
-		value: 'Popular',
+		value: 'rating',
 	},
 	{
 		key: '708gw5rqefwtye',
-		value: 'Popular',
+		value: 'sort order',
+	},
+	{
+		key: '236wegewyuhwyq3',
+		value: 'date_added',
+	},
+	{
+		key: '867456ywh4253yh',
+		value: 'date_modified',
 	},
 ];
 
 const nameSelect = [
 	{
 		key: '708gw5rqefwtye',
-		value: 'name',
-	},
-	{
-		key: 'wjybet',
-		value: 'name',
-	},
-	{
-		key: '2sdfgwh4',
-		value: 'name',
-	},
-	{
-		key: '16qt25',
-		value: 'name',
+		value: 'sorty by name',
 	},
 ];
 
 const costSelect = [
 	{
 		key: '1234rfgevs',
-		value: 'Cost',
-	},
-	{
-		key: '32y45wgreag',
-		value: 'Cost',
-	},
-	{
-		key: '857r6hts',
-		value: 'Cost',
-	},
-	{
-		key: '97tu8bsevf',
-		value: 'Cost',
-	},
-	{
-		key: '089hwjf13',
-		value: 'Cost',
-	},
-	{
-		key: '90897tibnrsefvr',
-		value: 'Cost',
+		value: 'price',
 	},
 ];
 
-const CatalogHeader = () => {
-	const [searchValue, setSearchValue] = React.useState('');
+const CatalogHeader = ({onEnter, searchValue, setSearchValue}: any) => {
+	// const [searchValue, setSearchValue] = React.useState('');
 	const [popularSorting, setPopularSorting] = React.useState(popularSelect[0]);
 	const [nameSorting, setNameSorting] = React.useState(nameSelect[0]);
 	const [costSorting, setCostSorting] = React.useState(costSelect[0]);
@@ -77,9 +53,10 @@ const CatalogHeader = () => {
 	return (
 		<div className={styles.catalogHeader}>
 			<SearchInput
+				onEnter={onEnter}
 				searchValue={searchValue}
 				setSearchValue={setSearchValue}
-				placeholder="Total items found: 666"
+				placeholder="Search ..."
 			/>
 
 			<div className={styles.catalogHeader__border} />

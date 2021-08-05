@@ -1,5 +1,5 @@
 import Checkbox from 'library/common/components/ui/checkbox';
-import React, {useCallback} from 'react';
+import React, {useCallback, useState} from 'react';
 import ArrowIcon from 'resources/icons/arrowIcon';
 import Slider from 'rc-slider';
 import { IChild, IFilters, IParent } from 'types/catalog';
@@ -26,31 +26,33 @@ const Filters = ({
 	minCost,
 	setFiltersValue,
 	setSubFilters,
+	setCatalogItemsValue,
+
+	activeItem,
+	setActiveItem,
+	activeCategories,
+	setActiveCategories,
 }: any) => {
 	// const [isShowHome, setIsShowHome] = React.useState(true);
 	// const [isShowOffice, setIsShowOffice] = React.useState(true);
 	// const [isShowWood, setIsShowWood] = React.useState(true);
 	// const [isShowDYI, setIsShowDYI] = React.useState(true);
-	const [cost, setCost] = React.useState([minCost, maxCost]);
-	const [minValueOfCost, setMinValueOfCost] = React.useState('0');
+	const [cost, setCost] = useState([minCost, maxCost]);
+	const [minValueOfCost, setMinValueOfCost] = useState('0');
 
-	const [filterState, setFilterState] = React.useState(filters);
+	const [filterState, setFilterState] = useState(filters);
+
+	const [appliedFilters, setAppliedFilters] = useState({});
+
+	// const [activeItem, setActiveItem] = useState(null);
+	// const [activeCategories, setActiveCategories] = useState(null);
 
 	// console.log('filters', filters);
 	// console.log('filterState', filterState);
 
-	const setFilter = React.useCallback((parent: IParent, child: IChild, value: boolean) => {
-		setFilterState({
-			...filterState,
-			[parent]: {
-				...filterState[parent],
-				[child]: {
-					...filterState[parent][child],
-					isSelected: value,
-				},
-			},
-		});
-	}, [filterState]);
+	const setFilter = React.useCallback(() => {
+		console.log()
+	}, []);
 
 	// React.useEffect(() => {
 	// 	setFiltersValue(filterState);
@@ -94,11 +96,11 @@ const Filters = ({
 		<article className={styles.filters}>
 			{
 				filters.map((f: any) => (
-					<FilterItem {...f} filterId={f.category_id} title={f.name} setSubFilters={setSubFilters} />
+					<FilterItem activeCategories={activeCategories} setActiveCategories={setActiveCategories} setActiveItem={setActiveItem} activeItem={activeItem} setCatalogItemsValue={setCatalogItemsValue} setFilter={setFilter} key={f.category_id} {...f} filterId={f.category_id} title={f.name} setSubFilters={setSubFilters} />
 				))
 			}
 
-			<div className={cn(styles.filters__block, styles.grid)} style={{ paddingRight: 30 }}>
+			{/* <div className={cn(styles.filters__block, styles.grid)} style={{ paddingRight: 30 }}>
 				<div className={styles.filters__block_header}>
 					<p>Cost</p>
 
@@ -120,18 +122,18 @@ const Filters = ({
 					/>
 				</div>
 
-				{/* <Range
+				<Range
 					allowCross
 					min={minCost}
 					max={maxCost}
 					value={cost}
 					onChange={rangeHandler}
-				/> */}
-			</div>
+				/>
+			</div> */}
 
-			<div className={styles.filters__block}>
+			{/* <div className={styles.filters__block}>
 				<Button text="Submit" onClick={submit}  />
-			</div>
+			</div> */}
 		</article>
 	);
 };

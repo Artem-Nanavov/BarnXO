@@ -33,4 +33,8 @@ export interface ICatalogItem {
 export type PricePageState = {
 	filters: IFilters;
 	catalogItems: ICatalogItem[];
+	searchPhrase: string;
+	sort: string;
+	page: number;
+	order: string;
 }
